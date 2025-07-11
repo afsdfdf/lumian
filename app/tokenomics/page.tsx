@@ -152,7 +152,7 @@ export default function TokenomicsPage() {
                 icon="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
               />
               <TokenStat 
-                value="$0.00001" 
+                value="0.00001" 
                 label="Data Credit Price" 
                 icon="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
               />
@@ -193,7 +193,7 @@ export default function TokenomicsPage() {
                       <h4 className="font-heading font-bold mb-2 dark:text-text-heading-dark">Data Credits (DC)</h4>
                       <ul className="list-disc list-inside text-text-medium dark:text-text-medium-dark space-y-2">
                         <li>Stable-priced utility token</li>
-                        <li>Fixed USD value (1 DC = $0.00001)</li>
+                        <li>Fixed USD value (1 DC = 0.00001)</li>
                         <li>Used to pay for network services</li>
                         <li>Non-transferable</li>
                         <li>Created by burning Lumina tokens</li>
@@ -300,7 +300,7 @@ export default function TokenomicsPage() {
                       The token burning mechanism creates a direct correlation between network usage and token value. For every $1 of network services used:
                     </p>
                     <ol className="list-decimal list-inside text-text-medium dark:text-text-medium-dark space-y-2">
-                      <li>100,000 Data Credits are required (at $0.00001 per DC)</li>
+                                              <li>100,000 Data Credits are required (at 0.00001 per DC)</li>
                       <li>Lumina tokens worth $1 are permanently burned from circulation</li>
                       <li>As network usage grows, more Lumina is burned, reducing supply</li>
                       <li>Decreasing supply against growing demand creates positive price pressure</li>
