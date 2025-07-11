@@ -72,11 +72,13 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/logo.png', type: 'image/png' },
-      { url: '/favicon.ico' },
-      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/logo.png', type: 'image/png', sizes: '32x32' },
+      { url: '/logo.png', type: 'image/png', sizes: '16x16' },
     ],
-    apple: '/logo.png',
+    apple: [
+      { url: '/logo.png', sizes: '180x180' },
+    ],
+    shortcut: '/logo.png',
   },
   alternates: {
     canonical: 'https://lumina.io',
@@ -95,9 +97,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${fontBody.variable} ${fontHeading.variable} scroll-smooth`} suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/logo.png" type="image/png" />
-        <link rel="alternate icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="alternate icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.png" type="image/png" sizes="32x32" />
+        <link rel="icon" href="/logo.png" type="image/png" sizes="16x16" />
+        <link rel="apple-touch-icon" href="/logo.png" sizes="180x180" />
+        <link rel="shortcut icon" href="/logo.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body className="font-sans antialiased">

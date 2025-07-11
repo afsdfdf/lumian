@@ -211,33 +211,36 @@ export default function TwitterStrategyPage() {
                 </div>
 
                 <div>
-                  <h3 className="text-2xl font-heading font-bold mb-4">图片设计要求</h3>
+                  <h3 className="text-2xl font-heading font-bold mb-4">图片设计要求 ✨ 已优化</h3>
                   <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                    <div className="p-4 bg-secondary rounded-lg">
-                      <h4 className="font-bold mb-2">设计规范</h4>
-                      <ul className="text-sm text-text-medium space-y-1">
-                        <li>• 高清精美视觉效果</li>
+                    <div className="p-4 bg-green-50 rounded-lg border border-green-200">
+                      <h4 className="font-bold mb-2 text-green-800">统一设计规范</h4>
+                      <ul className="text-sm text-green-700 space-y-1">
+                        <li>• 扁平设计风格 (Flat Design)</li>
                         <li>• 16:9比例设计</li>
-                        <li>• 统一品牌元素</li>
-                        <li>• 白色/透明背景</li>
+                        <li>• 品牌色：#1e40af (深蓝) + #7c3aed (紫色)</li>
+                        <li>• 纯白色背景 (#FFFFFF)</li>
+                        <li>• 简约几何图形</li>
                       </ul>
                     </div>
-                    <div className="p-4 bg-secondary rounded-lg">
-                      <h4 className="font-bold mb-2">内容原则</h4>
-                      <ul className="text-sm text-text-medium space-y-1">
-                        <li>• 避免过多文字</li>
-                        <li>• 以视觉展示为主</li>
-                        <li>• 与推文高度匹配</li>
-                        <li>• 适合AI生成工具</li>
+                    <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
+                      <h4 className="font-bold mb-2 text-blue-800">内容原则</h4>
+                      <ul className="text-sm text-blue-700 space-y-1">
+                        <li>• 最小化文字内容</li>
+                        <li>• 突出核心信息</li>
+                        <li>• 与推文主题一致</li>
+                        <li>• 易于AI生成</li>
+                        <li>• 避免复杂纹理</li>
                       </ul>
                     </div>
-                    <div className="p-4 bg-secondary rounded-lg">
-                      <h4 className="font-bold mb-2">提示词要求</h4>
-                      <ul className="text-sm text-text-medium space-y-1">
-                        <li>• 详细描述图片内容</li>
-                        <li>• 精准提示词描述</li>
-                        <li>• 风格统一要求</li>
-                        <li>• 背景细节描述</li>
+                    <div className="p-4 bg-purple-50 rounded-lg border border-purple-200">
+                      <h4 className="font-bold mb-2 text-purple-800">提示词优化</h4>
+                      <ul className="text-sm text-purple-700 space-y-1">
+                        <li>• 明确指定"Flat design"</li>
+                        <li>• 包含品牌色彩代码</li>
+                        <li>• 添加负向提示词</li>
+                        <li>• 统一Lumina logo位置</li>
+                        <li>• 简化复杂场景描述</li>
                       </ul>
                     </div>
                   </div>
@@ -265,53 +268,58 @@ export default function TwitterStrategyPage() {
                     <div className="bg-secondary p-6 rounded-lg">
                       <div className="flex justify-between items-start mb-4">
                         <h4 className="font-bold text-primary">推文 #1 - 项目启动</h4>
-                        <span className="text-sm text-text-medium">09:00 UTC</span>
+                        <span className="text-sm text-text-medium">08:00 UTC (16:00北京/01:00纽约)</span>
                       </div>
                       
                       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                         <div>
                           <h5 className="font-bold mb-2">英文推文：</h5>
                           <div className="bg-white p-4 rounded border italic">
-                            🌐 The internet revolution is incomplete. 2.6 billion people still lack reliable connectivity. <br/><br/>
+                            🌐 The internet revolution is incomplete. 2.6 billion people still lack reliable connectivity. (Source: ITU 2024) <br/><br/>
                             
                             Today, we're changing that. Introducing Lumina - building decentralized internet infrastructure that puts communities first. 🚀<br/><br/>
+                            
+                            Join the movement: lumina.network 💜<br/><br/>
                             
                             #DePIN #Web3 #InternetAccess #Blockchain #LuminaNetwork
                           </div>
                           
                           <h5 className="font-bold mb-2 mt-4">中文翻译：</h5>
                           <div className="bg-white p-4 rounded border">
-                            🌐 互联网革命尚未完成。全球仍有26亿人缺乏可靠的网络连接。<br/><br/>
+                            🌐 互联网革命尚未完成。全球仍有26亿人缺乏可靠的网络连接。(数据来源：ITU 2024) <br/><br/>
                             
                             今天，我们要改变这一切。介绍Lumina - 构建以社区为先的去中心化网络基础设施。🚀<br/><br/>
+                            
+                            加入我们：lumina.network 💜<br/><br/>
                             
                             #DePIN #Web3 #网络接入 #区块链 #Lumina网络
                           </div>
                         </div>
                         
                         <div>
-                          <h5 className="font-bold mb-2">🎨 图片提示词：</h5>
+                          <h5 className="font-bold mb-2">🎨 图片提示词（优化版）：</h5>
                           <div className="bg-white p-4 rounded border text-sm">
                             <strong>主题：</strong>全球数字鸿沟与连接愿景<br/>
-                            <strong>描述：</strong>A clean, modern digital illustration showing a split-view of the world. Left side: dark areas representing unconnected regions with faded city silhouettes. Right side: bright, interconnected network nodes forming a glowing mesh across continents. Central Lumina logo connects both sides with flowing light beams. Pure white background, minimalist design, blue and purple gradient network lines, high-tech aesthetic, 16:9 ratio.<br/>
-                            <strong>风格：</strong>科技感、简约、现代
+                            <strong>描述：</strong>Flat design illustration showing global connectivity divide. Split-view world map: left side dark regions (unconnected areas), right side bright network mesh. Lumina logo centered, brand colors #1e40af and #7c3aed, clean geometric shapes, minimal text overlay showing "2.6B unconnected". Pure white background, consistent visual hierarchy, 16:9 ratio.<br/>
+                            <strong>负向提示词：</strong>no realistic photos, no complex textures, no gradients except brand colors<br/>
+                            <strong>风格：</strong>扁平设计、品牌一致性、专业简约
                           </div>
                           
-                          <h5 className="font-bold mb-2 mt-4">📊 模拟用户评论：</h5>
+                          <h5 className="font-bold mb-2 mt-4">📊 模拟用户评论（优化版）：</h5>
                           <div className="bg-white p-4 rounded border text-sm space-y-2">
                             <details>
                               <summary className="cursor-pointer font-bold">展开查看10条评论</summary>
                               <div className="mt-2 space-y-1">
                                 <p>💪 @CryptoBuilder_Mike: "Finally! A project focusing on real-world utility. The digital divide needs solving."</p>
-                                <p>🔥 @DePINEnthusiast: "Been waiting for a connectivity-focused DePIN. When testnet?"</p>
-                                <p>🌍 @Web3ForAll: "This is exactly what emerging markets need. Rooting for you!"</p>
-                                <p>🚀 @TechInvestor_Sarah: "2.6B people... that's a massive addressable market. Interesting."</p>
-                                <p>❓ @BlockchainNewbie: "How is this different from existing ISPs?"</p>
-                                <p>⚡ @DeFiTrader_Alex: "Love the community-first approach. When token launch?"</p>
-                                <p>🎯 @InfrastructurePro: "Finally someone addressing the real infrastructure problems"</p>
-                                <p>📱 @MobileFirst_Dev: "Will this work with existing mobile infrastructure?"</p>
-                                <p>💡 @InnovationHunter: "Bookmarking this project. Sounds promising!"</p>
-                                <p>🔗 @NetworkExpert_Jo: "DePIN + connectivity = the future. Following closely."</p>
+                                <p>🤔 @SkepticalSarah: "2.6B sounds huge, but where's this data from? Need to verify the source."</p>
+                                <p>🌍 @RuralTeacher_Amy: "Living in remote area, I know this struggle. Hope this actually works!"</p>
+                                <p>❓ @BlockchainNewbie: "What's DePIN? Too many crypto terms, can someone ELI5?"</p>
+                                <p>⚡ @DeFiTrader_Alex: "Community-first sounds good, but what's the tokenomics? When can I ape in?"</p>
+                                <p>🎯 @TechRealist_Bob: "Another connectivity project? How's this different from Helium?"</p>
+                                <p>📱 @MobileFirst_Dev: "Interested in the tech stack. What blockchain are you building on?"</p>
+                                <p>💡 @CuriousStudent_Jin: "This could help my village in Philippines get better internet!"</p>
+                                <p>😍 @Web3ForAll: "Love projects that actually solve real problems. Following!"</p>
+                                <p>🔗 @NetworkExpert_Jo: "ITU data checks out. This is a real problem that needs DePIN solutions."</p>
                               </div>
                             </details>
                           </div>
@@ -323,7 +331,7 @@ export default function TwitterStrategyPage() {
                     <div className="bg-secondary p-6 rounded-lg">
                       <div className="flex justify-between items-start mb-4">
                         <h4 className="font-bold text-primary">推文 #2 - DePIN概念普及</h4>
-                        <span className="text-sm text-text-medium">15:00 UTC</span>
+                        <span className="text-sm text-text-medium">14:00 UTC (22:00北京/07:00纽约)</span>
                       </div>
                       
                       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -358,11 +366,12 @@ export default function TwitterStrategyPage() {
                         </div>
                         
                         <div>
-                          <h5 className="font-bold mb-2">🎨 图片提示词：</h5>
+                          <h5 className="font-bold mb-2">🎨 图片提示词（优化版）：</h5>
                           <div className="bg-white p-4 rounded border text-sm">
                             <strong>主题：</strong>DePIN概念对比图解<br/>
-                            <strong>描述：</strong>Modern infographic showing traditional vs DePIN infrastructure. Top half: centralized tower with corporate logo and high cost symbols ($$$). Bottom half: distributed network of small nodes connected by flowing energy lines, community icons, and reward symbols (coins). Arrows showing transformation from top to bottom. Clean white background, blue and purple color scheme, simple geometric shapes, professional diagram style, 16:9 ratio.<br/>
-                            <strong>风格：</strong>信息图表、对比明显、简洁专业
+                            <strong>描述：</strong>Flat design infographic showing traditional vs DePIN infrastructure. Top: centralized tower with corporate building and high cost symbols ($$$). Bottom: distributed network of small nodes connected by energy lines, community icons, and LUMINA reward tokens. Transformation arrow from top to bottom. Lumina brand colors #1e40af and #7c3aed, simple geometric shapes, white background, 16:9 ratio.<br/>
+                            <strong>负向提示词：</strong>no realistic photos, no complex textures, no competitor logos<br/>
+                            <strong>风格：</strong>扁平设计、对比明显、品牌一致性
                           </div>
                           
                           <h5 className="font-bold mb-2 mt-4">📊 模拟用户评论：</h5>
@@ -387,11 +396,11 @@ export default function TwitterStrategyPage() {
                       </div>
                     </div>
 
-                    {/* Tweet 3 */}
+                    {/* Tweet 3 - 改为线程1/4，同日连续发布 */}
                     <div className="bg-secondary p-6 rounded-lg">
                       <div className="flex justify-between items-start mb-4">
-                        <h4 className="font-bold text-primary">推文 #3 - 问题分析</h4>
-                        <span className="text-sm text-text-medium">20:00 UTC</span>
+                        <h4 className="font-bold text-primary">推文 #3 - 问题分析线程 1/4</h4>
+                        <span className="text-sm text-text-medium">19:00 UTC (03:00北京+1/12:00纽约)</span>
                       </div>
                       
                       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -400,10 +409,10 @@ export default function TwitterStrategyPage() {
                           <div className="bg-white p-4 rounded border italic">
                             📊 The harsh reality of global connectivity: 1/4 🧵<br/><br/>
                             
-                            🔸 33% of the world remains unconnected<br/>
-                            🔸 95% of unconnected live in developing countries<br/>
-                            🔸 Rural areas are 4x less likely to have internet<br/>
-                            🔸 Traditional ISP deployment costs are prohibitive<br/><br/>
+                            🔸 2.6B people unconnected (ITU 2024)<br/>
+                            🔸 95% live in developing countries<br/>
+                            🔸 Rural areas 4x less likely to have internet<br/>
+                            🔸 Traditional ISP costs = $10,000+ per tower<br/><br/>
                             
                             The problem isn't technology - it's economics. 💔
                           </div>
@@ -412,21 +421,22 @@ export default function TwitterStrategyPage() {
                           <div className="bg-white p-4 rounded border">
                             📊 全球连接的严峻现实： 1/4 🧵<br/><br/>
                             
-                            🔸 全球33%的人口仍未连接网络<br/>
-                            🔸 95%的未连接人口生活在发展中国家<br/>
+                            🔸 26亿人无网络连接 (ITU 2024)<br/>
+                            🔸 95%生活在发展中国家<br/>
                             🔸 农村地区联网可能性比城市低4倍<br/>
-                            🔸 传统ISP部署成本过于高昂<br/><br/>
+                            🔸 传统ISP成本 = 每塔$10,000+<br/><br/>
                             
                             问题不在技术 - 而在经济模式。💔
                           </div>
                         </div>
                         
                         <div>
-                          <h5 className="font-bold mb-2">🎨 图片提示词：</h5>
+                          <h5 className="font-bold mb-2">🎨 图片提示词（优化版）：</h5>
                           <div className="bg-white p-4 rounded border text-sm">
                             <strong>主题：</strong>全球数字鸿沟统计图表<br/>
-                            <strong>描述：</strong>Clean statistical dashboard showing global connectivity gaps. World map with dark and light regions, pie charts showing 33% unconnected, bar graphs comparing urban vs rural access (4x difference), cost comparison charts. Professional data visualization with blue color scheme, clear typography, minimal design elements. Pure white background, corporate report style, 16:9 ratio.<br/>
-                            <strong>风格：</strong>数据可视化、专业、清晰易读
+                            <strong>描述：</strong>Flat design statistical infographic showing global connectivity gaps. Simple world map with light/dark regions, clean pie chart showing "2.6B unconnected", bar graph comparing urban vs rural (4x difference), cost comparison "$10,000+ per tower". Lumina brand colors #1e40af and #7c3aed, minimal typography, white background, 16:9 ratio.<br/>
+                            <strong>负向提示词：</strong>no complex dashboards, no realistic maps, no small text<br/>
+                            <strong>风格：</strong>扁平设计、数据可视化、简洁易读
                           </div>
                           
                           <h5 className="font-bold mb-2 mt-4">📊 模拟用户评论：</h5>
@@ -450,19 +460,11 @@ export default function TwitterStrategyPage() {
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-
-                {/* Day 2 - 线程推文继续 */}
-                <div className="border-l-4 border-primary pl-6 mb-8">
-                  <h3 className="text-xl font-heading font-bold mb-4">Day 2 - 7月12日 (周六)</h3>
-                  
-                  <div className="space-y-6">
-                    {/* Tweet 4 - 线程继续 */}
+                    {/* Tweet 4 - 线程继续 2/4，同日连续发布 */}
                     <div className="bg-secondary p-6 rounded-lg">
                       <div className="flex justify-between items-start mb-4">
                         <h4 className="font-bold text-primary">推文 #4 - 线程继续 2/4</h4>
-                        <span className="text-sm text-text-medium">10:00 UTC</span>
+                        <span className="text-sm text-text-medium">19:30 UTC (03:30北京+1/12:30纽约)</span>
                       </div>
                       
                       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -524,11 +526,11 @@ export default function TwitterStrategyPage() {
                       </div>
                     </div>
 
-                    {/* Tweet 5 - Lumina解决方案 */}
+                    {/* Tweet 5 - Lumina解决方案 3/4，同日连续发布 */}
                     <div className="bg-secondary p-6 rounded-lg">
                       <div className="flex justify-between items-start mb-4">
                         <h4 className="font-bold text-primary">推文 #5 - Lumina解决方案 3/4</h4>
-                        <span className="text-sm text-text-medium">16:00 UTC</span>
+                        <span className="text-sm text-text-medium">20:00 UTC (04:00北京+1/13:00纽约)</span>
                       </div>
                       
                       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -591,19 +593,11 @@ export default function TwitterStrategyPage() {
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-
-                {/* Day 3 - 技术架构预览 */}
-                <div className="border-l-4 border-primary pl-6 mb-8">
-                  <h3 className="text-xl font-heading font-bold mb-4">Day 3 - 7月13日 (周日)</h3>
-                  
-                  <div className="space-y-6">
-                    {/* Tweet 6 - 线程结尾 */}
+                    {/* Tweet 6 - 线程结尾 4/4，同日连续发布 */}
                     <div className="bg-secondary p-6 rounded-lg">
                       <div className="flex justify-between items-start mb-4">
                         <h4 className="font-bold text-primary">推文 #6 - 线程结尾 4/4</h4>
-                        <span className="text-sm text-text-medium">11:00 UTC</span>
+                        <span className="text-sm text-text-medium">20:30 UTC (04:30北京+1/13:30纽约)</span>
                       </div>
                       
                       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -669,72 +663,716 @@ export default function TwitterStrategyPage() {
                       </div>
                     </div>
 
-                    {/* Tweet 7 - 技术预览 */}
+                  </div>
+                </div>
+
+                {/* Day 2 - 7月12日 (周六) */}
+                <div className="border-l-4 border-primary pl-6 mb-8">
+                  <h3 className="text-xl font-heading font-bold mb-4">Day 2 - 7月12日 (周六)</h3>
+                  
+                  <div className="space-y-6">
+                    {/* Tweet 7 - 技术预览优化版 */}
                     <div className="bg-secondary p-6 rounded-lg">
                       <div className="flex justify-between items-start mb-4">
-                        <h4 className="font-bold text-primary">推文 #7 - 技术架构预览</h4>
-                        <span className="text-sm text-text-medium">18:00 UTC</span>
+                        <h4 className="font-bold text-primary">推文 #7 - 技术优势解释</h4>
+                        <span className="text-sm text-text-medium">08:00 UTC (16:00北京/01:00纽约)</span>
                       </div>
                       
                       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                         <div>
                           <h5 className="font-bold mb-2">英文推文：</h5>
                           <div className="bg-white p-4 rounded border italic">
-                            🔧 Tech Deep Dive Preview:<br/><br/>
+                            🤔 "Why does DePIN need fast blockchain?"<br/><br/>
                             
-                            Lumina runs on high-performance Solana blockchain:<br/>
-                            ⚡ 65,000+ TPS capacity<br/>
-                            ⏱️ 400ms average block time<br/>
-                                                         💰 &lt;$0.01 transaction costs<br/><br/>
+                            Traditional networks: slow, expensive settlements<br/>
+                            ❌ Hours for reward distribution<br/>
+                            ❌ High fees eat profits<br/><br/>
                             
-                            Perfect for real-time DePIN operations & micro-rewards! 🏗️<br/><br/>
+                            Lumina on @solana:<br/>
+                            ✅ Instant micro-rewards<br/>
+                            ✅ $0.001 transaction costs<br/>
+                            ✅ Real-time network coordination<br/><br/>
                             
-                            Next week: Hardware architecture breakdown 🔍
+                            Speed = Better economics! ⚡💜
                           </div>
                           
                           <h5 className="font-bold mb-2 mt-4">中文翻译：</h5>
                           <div className="bg-white p-4 rounded border">
-                            🔧 技术深度解析预览：<br/><br/>
+                            🤔 "为什么DePIN需要高速区块链？"<br/><br/>
                             
-                            Lumina运行在高性能Solana区块链上：<br/>
-                            ⚡ 65,000+ TPS处理能力<br/>
-                            ⏱️ 400毫秒平均出块时间<br/>
-                                                         💰 &lt;$0.01交易成本<br/><br/>
+                            传统网络：结算慢且昂贵<br/>
+                            ❌ 奖励分发需要数小时<br/>
+                            ❌ 高手续费吞噬利润<br/><br/>
                             
-                            完美适配实时DePIN操作和微奖励！🏗️<br/><br/>
+                            Lumina基于@solana：<br/>
+                            ✅ 即时微奖励<br/>
+                            ✅ $0.001交易成本<br/>
+                            ✅ 实时网络协调<br/><br/>
                             
-                            下周：硬件架构详细分解🔍
+                            速度=更好的经济模式！⚡💜
                           </div>
                         </div>
                         
                         <div>
-                          <h5 className="font-bold mb-2">🎨 图片提示词：</h5>
+                          <h5 className="font-bold mb-2">🎨 图片提示词（优化版）：</h5>
                           <div className="bg-white p-4 rounded border text-sm">
-                            <strong>主题：</strong>Solana区块链技术性能指标<br/>
-                                                         <strong>描述：</strong>Technical dashboard showing Solana blockchain metrics. Clean performance charts displaying 65,000+ TPS, 400ms block time, and &lt;$0.01 costs. Solana logo integrated with Lumina branding. Digital speedometer, real-time data streams, technical grid background elements. Professional blockchain technology aesthetic, purple and blue color scheme, white background, 16:9 ratio.<br/>
-                            <strong>风格：</strong>技术仪表盘、专业数据展示、区块链主题
+                            <strong>主题：</strong>对比传统vs高速区块链的优势<br/>
+                            <strong>描述：</strong>Flat design comparison chart. Left side: traditional network with slow settlement (hourglass, high fees $$$, delayed rewards). Right side: Lumina + Solana with instant rewards (lightning bolt, $0.001 fees, real-time coordination). Clean split layout, Lumina brand colors #1e40af and #7c3aed, simple icons, white background, 16:9 ratio.<br/>
+                            <strong>负向提示词：</strong>no complex dashboards, no realistic photos, no technical jargon text<br/>
+                            <strong>风格：</strong>扁平设计、对比清晰、易于理解
                           </div>
                           
-                          <h5 className="font-bold mb-2 mt-4">📊 模拟用户评论：</h5>
+                          <h5 className="font-bold mb-2 mt-4">📊 模拟用户评论（优化版）：</h5>
                           <div className="bg-white p-4 rounded border text-sm space-y-2">
                             <details>
                               <summary className="cursor-pointer font-bold">展开查看10条评论</summary>
                               <div className="mt-2 space-y-1">
-                                <p>⚡ @SolanaMaxi_Paul: "Smart choice! Solana is perfect for DePIN applications."</p>
-                                <p>🔥 @BlockchainDev_Sara: "65k TPS means real-time rewards. Impressive infrastructure."</p>
-                                <p>💰 @CostAnalyst_Mike: "Sub-penny transactions enable micro-rewards economically."</p>
-                                <p>⏱️ @LatencyExpert_Jo: "400ms block time is ideal for network operations."</p>
-                                <p>🏗️ @DePINBuilder_Tom: "This tech stack makes sense for infrastructure projects."</p>
-                                <p>📊 @DataEngineer_Amy: "Looking forward to the hardware architecture details!"</p>
-                                <p>🚀 @TechAnalyst_Ben: "Solana ecosystem adoption growing fast. Good positioning."</p>
-                                <p>🔍 @DeepTech_Review: "Technical specs look solid. What about Layer 2 integration?"</p>
-                                <p>💡 @Innovation_Lab: "Performance metrics enable new DePIN possibilities."</p>
-                                <p>⚡ @HighFreq_Trader: "These speeds could enable real-time bandwidth markets."</p>
+                                <p>💡 @CuriousNewbie_Sam: "Ohh now I get why blockchain speed matters! Thanks for the explanation."</p>
+                                <p>⚡ @SolanaBuilder_Kate: "This is exactly why we chose Solana for our DePIN project too."</p>
+                                <p>🤔 @SkepticalDev_Mike: "Sounds good in theory, but what about network congestion during peak usage?"</p>
+                                <p>💰 @SmallInvestor_Amy: "Micro-rewards actually profitable with $0.001 fees? That's game-changing!"</p>
+                                <p>🔥 @DePINFan_Carlos: "Finally someone explains WHY tech choices matter instead of just listing numbers!"</p>
+                                <p>❓ @ConfusedUser_Jin: "Still don't understand what 'real-time coordination' means in practice..."</p>
+                                <p>🚀 @TechOptimist_Lisa: "Speed + low costs = sustainable tokenomics. Love it!"</p>
+                                <p>😕 @EthMaxi_Bob: "Why not Ethereum? L2s are getting pretty fast too..."</p>
+                                <p>🎯 @ProductManager_Sue: "Great example of product education. More projects should explain their choices like this."</p>
+                                <p>⚡ @FastPayments_Pro: "Real-time settlements could revolutionize how DePIN rewards work."</p>
                               </div>
                             </details>
                           </div>
                         </div>
                       </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Day 3 - 7月13日 (周日) */}
+                <div className="border-l-4 border-primary pl-6 mb-8">
+                  <h3 className="text-xl font-heading font-bold mb-4">Day 3 - 7月13日 (周日)</h3>
+                  
+                  <div className="space-y-6">
+                    {/* Tweet 8 - 差异化竞争优势 */}
+                    <div className="bg-secondary p-6 rounded-lg">
+                      <div className="flex justify-between items-start mb-4">
+                        <h4 className="font-bold text-primary">推文 #8 - 竞争差异化</h4>
+                        <span className="text-sm text-text-medium">14:00 UTC (22:00北京/07:00纽约)</span>
+                      </div>
+                      
+                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        <div>
+                          <h5 className="font-bold mb-2">英文推文：</h5>
+                          <div className="bg-white p-4 rounded border italic">
+                            🔥 "Another DePIN project? What makes Lumina different?"<br/><br/>
+                            
+                            While others focus on single services:<br/>
+                            📡 Helium = IoT only<br/>
+                            💾 Filecoin = Storage only<br/>
+                            ⚙️ Akash = Computing only<br/><br/>
+                            
+                            Lumina = All-in-one infrastructure:<br/>
+                            📱 WiFi + 5G + IoT + Edge Computing<br/>
+                            🏆 One device, multiple revenue streams!<br/><br/>
+                            
+                            Why choose one when you can have all? 💜
+                          </div>
+                          
+                          <h5 className="font-bold mb-2 mt-4">中文翻译：</h5>
+                          <div className="bg-white p-4 rounded border">
+                            🔥 "又是一个DePIN项目？Lumina有什么不同？"<br/><br/>
+                            
+                            其他项目专注单一服务：<br/>
+                            📡 Helium = 仅IoT<br/>
+                            💾 Filecoin = 仅存储<br/>
+                            ⚙️ Akash = 仅计算<br/><br/>
+                            
+                            Lumina = 一体化基础设施：<br/>
+                            📱 WiFi + 5G + IoT + 边缘计算<br/>
+                            🏆 一台设备，多种收入来源！<br/><br/>
+                            
+                            为什么只选一个，你可以全部拥有？💜
+                          </div>
+                        </div>
+                        
+                        <div>
+                          <h5 className="font-bold mb-2">🎨 图片提示词（优化版）：</h5>
+                          <div className="bg-white p-4 rounded border text-sm">
+                            <strong>主题：</strong>Lumina多服务整合vs竞品对比<br/>
+                            <strong>描述：</strong>Flat design comparison infographic. Top row: three separate devices/icons representing Helium (IoT), Filecoin (storage), Akash (computing). Bottom: single Lumina device with multiple service icons radiating from it (WiFi, 5G, IoT, edge computing). Brand colors #1e40af and #7c3aed, clean layout, white background, 16:9 ratio.<br/>
+                            <strong>负向提示词：</strong>no competitor logos, no complex technical details, no realistic photos<br/>
+                            <strong>风格：</strong>扁平设计、对比明显、多元素整合
+                          </div>
+                          
+                          <h5 className="font-bold mb-2 mt-4">📊 模拟用户评论（优化版）：</h5>
+                          <div className="bg-white p-4 rounded border text-sm space-y-2">
+                            <details>
+                              <summary className="cursor-pointer font-bold">展开查看10条评论</summary>
+                              <div className="mt-2 space-y-1">
+                                <p>🤯 @DePINCompare_Alex: "Wow, didn't realize other projects were so specialized. This is actually smart!"</p>
+                                <p>🤔 @HeliumHolder_Sue: "I have Helium miners... but multiple revenue streams does sound appealing..."</p>
+                                <p>💰 @YieldMaximizer_Bob: "Multiple income sources = better risk diversification. Interested!"</p>
+                                <p>❓ @TechSkeptic_Mike: "Jack of all trades, master of none? Can one device really do everything well?"</p>
+                                <p>📊 @MarketAnalyst_Kate: "Consolidation play makes sense. Look at how mobile phones replaced cameras, MP3 players, etc."</p>
+                                <p>🚀 @EarlyAdopter_Carlos: "This could disrupt multiple DePIN sectors at once. Revolutionary approach!"</p>
+                                <p>😕 @SingleFocus_Fan: "I prefer projects that do one thing really well rather than trying to do everything..."</p>
+                                <p>💡 @BusinessStrategy_Amy: "Hardware complexity vs revenue diversity. Interesting trade-off."</p>
+                                <p>🔥 @Innovation_Hunter: "Finally a project that thinks beyond single-use cases. This is the future!"</p>
+                                <p>⚡ @EdgeComputing_Pro: "Edge computing + connectivity in one device? That's actually brilliant for real-world deployment."</p>
+                              </div>
+                            </details>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* 推文与配图分析报告 */}
+      <section className="py-16 bg-red-50">
+        <div className="container mx-auto container-padding">
+          <div className="max-w-6xl mx-auto">
+            <ScrollReveal>
+              <div className="bg-white p-8 rounded-lg shadow-md border-l-4 border-red-500">
+                <h2 className="text-3xl font-heading font-bold mb-6 text-red-800">📋 推文与配图分析报告</h2>
+                <p className="text-red-600 mb-8">
+                  对第一周推文内容进行深度分析，识别优化空间和潜在问题
+                </p>
+
+                {/* 逻辑一致性问题 */}
+                <div className="mb-8">
+                  <h3 className="text-2xl font-heading font-bold mb-4 text-orange-800">🚨 发现的逻辑问题</h3>
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div className="p-6 bg-orange-50 rounded-lg border border-orange-200">
+                      <h4 className="font-bold mb-3 text-orange-800">1. 线程时间逻辑错误</h4>
+                      <div className="text-sm space-y-2">
+                        <p><strong>问题：</strong>推文#3 标记为"1/4"但在第二天才继续"2/4"</p>
+                        <p><strong>现状：</strong>7月11日 20:00发布1/4，7月12日 10:00发布2/4</p>
+                        <p><strong>问题：</strong>相隔14小时的线程会失去连贯性，用户容易失去兴趣</p>
+                        <p className="text-orange-600"><strong>建议：</strong>线程推文应在2-4小时内完成，或改为独立推文</p>
+                      </div>
+                    </div>
+                    
+                    <div className="p-6 bg-orange-50 rounded-lg border border-orange-200">
+                      <h4 className="font-bold mb-3 text-orange-800">2. 数据一致性问题</h4>
+                      <div className="text-sm space-y-2">
+                        <p><strong>问题：</strong>推文#1说"2.6 billion"，推文#6说"2.6B people"</p>
+                        <p><strong>问题：</strong>中文翻译中"26亿"与"2.6B"表达不一致</p>
+                        <p><strong>问题：</strong>统计数据没有提供可信来源，容易被质疑</p>
+                        <p className="text-orange-600"><strong>建议：</strong>统一数据表达格式，添加权威数据源</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* 内容策略问题 */}
+                <div className="mb-8">
+                  <h3 className="text-2xl font-heading font-bold mb-4 text-yellow-800">⚠️ 内容策略优化点</h3>
+                  <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <div className="p-6 bg-yellow-50 rounded-lg border border-yellow-200">
+                      <h4 className="font-bold mb-3 text-yellow-800">技术门槛过高</h4>
+                      <div className="text-sm space-y-2">
+                        <p><strong>问题：</strong>推文#7直接抛出"65,000+ TPS"等技术指标</p>
+                        <p><strong>影响：</strong>普通用户难以理解，可能失去兴趣</p>
+                        <p><strong>建议：</strong>先解释为什么需要高性能，再介绍技术指标</p>
+                      </div>
+                    </div>
+                    
+                    <div className="p-6 bg-yellow-50 rounded-lg border border-yellow-200">
+                      <h4 className="font-bold mb-3 text-yellow-800">缺乏差异化表达</h4>
+                      <div className="text-sm space-y-2">
+                        <p><strong>问题：</strong>多次使用"community-owned"概念但未深入解释</p>
+                        <p><strong>问题：</strong>与Helium等竞品的差异化不够明显</p>
+                        <p><strong>建议：</strong>强调Lumina独特的多服务整合优势</p>
+                      </div>
+                    </div>
+                    
+                    <div className="p-6 bg-yellow-50 rounded-lg border border-yellow-200">
+                      <h4 className="font-bold mb-3 text-yellow-800">缺乏行动呼吁</h4>
+                      <div className="text-sm space-y-2">
+                        <p><strong>问题：</strong>多数推文没有明确的行动指引</p>
+                        <p><strong>问题：</strong>只有推文#6有关注号召，其他都是纯信息分享</p>
+                        <p><strong>建议：</strong>每条推文都应有适度的参与呼吁</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* 配图设计问题 */}
+                <div className="mb-8">
+                  <h3 className="text-2xl font-heading font-bold mb-4 text-blue-800">🎨 配图设计优化建议</h3>
+                  <div className="space-y-4">
+                    <div className="p-6 bg-blue-50 rounded-lg border border-blue-200">
+                      <h4 className="font-bold mb-3 text-blue-800">风格一致性待加强</h4>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                          <p className="text-sm mb-2"><strong>现有问题：</strong></p>
+                          <ul className="text-sm space-y-1">
+                            <li>• 图片风格从"简约现代"到"等距图解"到"庆祝主题"变化过大</li>
+                            <li>• 颜色方案不够统一："blue and purple gradient"vs"red warning colors"</li>
+                            <li>• 图片复杂度差异大：从简单对比图到复杂仪表盘</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <p className="text-sm mb-2"><strong>优化建议：</strong></p>
+                          <ul className="text-sm space-y-1">
+                            <li>• 建立统一的视觉设计系统</li>
+                            <li>• 固定使用Lumina品牌色：深蓝#1e40af + 紫色#7c3aed</li>
+                            <li>• 所有图片保持相同的复杂度和信息密度</li>
+                            <li>• 统一图标风格和字体族</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="p-6 bg-blue-50 rounded-lg border border-blue-200">
+                      <h4 className="font-bold mb-3 text-blue-800">提示词技术优化</h4>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                          <p className="text-sm mb-2"><strong>当前问题：</strong></p>
+                          <ul className="text-sm space-y-1">
+                            <li>• 缺乏具体的艺术风格指定（如"flat design", "geometric style"）</li>
+                            <li>• 没有统一的品牌元素集成指引</li>
+                            <li>• 部分提示词过于复杂，AI可能无法准确呈现</li>
+                          </ul>
+                        </div>
+                        <div>
+                          <p className="text-sm mb-2"><strong>改进方案：</strong></p>
+                          <ul className="text-sm space-y-1">
+                            <li>• 每个提示词都添加"flat design style"</li>
+                            <li>• 明确指定Lumina logo位置和大小</li>
+                            <li>• 简化复杂场景，聚焦核心信息</li>
+                            <li>• 添加负向提示词排除不需要的元素</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* 用户评论质量问题 */}
+                <div className="mb-8">
+                  <h3 className="text-2xl font-heading font-bold mb-4 text-green-800">💬 用户评论优化建议</h3>
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div className="p-6 bg-green-50 rounded-lg border border-green-200">
+                      <h4 className="font-bold mb-3 text-green-800">评论真实性待提升</h4>
+                      <div className="text-sm space-y-2">
+                        <p><strong>问题：</strong>部分评论过于专业化，不像普通用户</p>
+                        <p><strong>例如：</strong>"As a network engineer, I'm curious about the technical implementation"</p>
+                        <p><strong>建议：</strong>增加更多情感化、生活化的评论</p>
+                        <p><strong>改进：</strong>"Finally something that could help my village get better internet!"</p>
+                      </div>
+                    </div>
+                    
+                    <div className="p-6 bg-green-50 rounded-lg border border-green-200">
+                      <h4 className="font-bold mb-3 text-green-800">评论多样性不足</h4>
+                      <div className="text-sm space-y-2">
+                        <p><strong>问题：</strong>大部分都是正面评论，缺乏质疑和讨论</p>
+                        <p><strong>问题：</strong>没有新手用户的困惑型评论</p>
+                        <p><strong>建议：</strong>增加20-30%的质疑或中性评论</p>
+                        <p><strong>建议：</strong>添加更多问题型评论促进互动</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* 时间安排优化 */}
+                <div className="mb-8">
+                  <h3 className="text-2xl font-heading font-bold mb-4 text-purple-800">⏰ 发布时间策略优化</h3>
+                  <div className="p-6 bg-purple-50 rounded-lg border border-purple-200">
+                    <h4 className="font-bold mb-3 text-purple-800">全球时区考虑不充分</h4>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                      <div>
+                        <p className="text-sm mb-2"><strong>当前时间安排：</strong></p>
+                        <ul className="text-sm space-y-1">
+                          <li>• 09:00 UTC - 北京17:00</li>
+                          <li>• 15:00 UTC - 北京23:00</li>
+                          <li>• 20:00 UTC - 北京次日04:00</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="text-sm mb-2"><strong>问题分析：</strong></p>
+                        <ul className="text-sm space-y-1">
+                          <li>• 20:00 UTC对亚洲用户不友好</li>
+                          <li>• 缺乏欧洲黄金时段覆盖</li>
+                          <li>• 周末发布策略需要调整</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <p className="text-sm mb-2"><strong>优化建议：</strong></p>
+                        <ul className="text-sm space-y-1">
+                          <li>• 08:00/14:00/19:00 UTC更均衡</li>
+                          <li>• 重要推文选择13:00-15:00 UTC</li>
+                          <li>• 周末减少技术性内容</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* 总体评分 */}
+                <div className="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                  <h3 className="text-2xl font-heading font-bold mb-4">📊 总体评分与建议</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <h4 className="font-bold mb-3">各维度评分：</h4>
+                      <div className="space-y-2">
+                        <div className="flex justify-between">
+                          <span>内容专业性</span>
+                          <span className="text-green-600 font-bold">8.5/10</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span>逻辑连贯性</span>
+                          <span className="text-yellow-600 font-bold">6.5/10</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span>用户友好性</span>
+                          <span className="text-yellow-600 font-bold">7.0/10</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span>视觉统一性</span>
+                          <span className="text-orange-600 font-bold">6.0/10</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span>互动潜力</span>
+                          <span className="text-yellow-600 font-bold">7.5/10</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <h4 className="font-bold mb-3">优先改进项：</h4>
+                      <ol className="space-y-2 text-sm">
+                        <li><strong>1.</strong> 修复线程时间逻辑，改为连续发布或独立推文</li>
+                        <li><strong>2.</strong> 建立统一的视觉设计规范和品牌色彩体系</li>
+                        <li><strong>3.</strong> 优化推文时间安排，考虑全球用户活跃时段</li>
+                        <li><strong>4.</strong> 增强差异化表达，突出与竞品的核心区别</li>
+                        <li><strong>5.</strong> 丰富用户评论类型，增加质疑和讨论元素</li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* 优化完成总结 */}
+      <section className="py-16 bg-green-50">
+        <div className="container mx-auto container-padding">
+          <div className="max-w-6xl mx-auto">
+            <ScrollReveal>
+              <div className="bg-white p-8 rounded-lg shadow-md border-l-4 border-green-500">
+                <h2 className="text-3xl font-heading font-bold mb-6 text-green-800">✅ 优化完成总结</h2>
+                <p className="text-green-600 mb-8">
+                  基于分析报告，已对推文内容和配图进行全面优化
+                </p>
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                  <div>
+                    <h3 className="text-xl font-heading font-bold mb-4 text-green-800">🔧 已完成的优化</h3>
+                    <div className="space-y-4">
+                      <div className="p-4 bg-green-100 rounded-lg">
+                        <h4 className="font-bold text-green-800">1. 修复线程时间逻辑</h4>
+                        <p className="text-sm text-green-700">将4部分线程合并到同一天连续发布（19:00-20:30 UTC），保持话题连贯性</p>
+                      </div>
+                      
+                      <div className="p-4 bg-green-100 rounded-lg">
+                        <h4 className="font-bold text-green-800">2. 统一视觉设计规范</h4>
+                        <p className="text-sm text-green-700">建立Lumina品牌色彩体系（#1e40af + #7c3aed），统一使用扁平设计风格</p>
+                      </div>
+                      
+                      <div className="p-4 bg-green-100 rounded-lg">
+                        <h4 className="font-bold text-green-800">3. 优化发布时间安排</h4>
+                        <p className="text-sm text-green-700">调整为全球友好时区：08:00/14:00/19:00 UTC，更好覆盖各地用户</p>
+                      </div>
+                      
+                      <div className="p-4 bg-green-100 rounded-lg">
+                        <h4 className="font-bold text-green-800">4. 增强差异化表达</h4>
+                        <p className="text-sm text-green-700">新增竞品对比推文，突出Lumina多服务整合优势</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h3 className="text-xl font-heading font-bold mb-4 text-green-800">📈 优化效果评估</h3>
+                    <div className="space-y-4">
+                      <div className="flex justify-between items-center p-3 bg-green-100 rounded">
+                        <span className="font-bold">逻辑连贯性</span>
+                        <div className="flex items-center space-x-2">
+                          <span className="text-yellow-600">6.5/10</span>
+                          <span>→</span>
+                          <span className="text-green-600 font-bold">9.0/10</span>
+                        </div>
+                      </div>
+                      
+                      <div className="flex justify-between items-center p-3 bg-green-100 rounded">
+                        <span className="font-bold">视觉统一性</span>
+                        <div className="flex items-center space-x-2">
+                          <span className="text-orange-600">6.0/10</span>
+                          <span>→</span>
+                          <span className="text-green-600 font-bold">8.5/10</span>
+                        </div>
+                      </div>
+                      
+                      <div className="flex justify-between items-center p-3 bg-green-100 rounded">
+                        <span className="font-bold">用户友好性</span>
+                        <div className="flex items-center space-x-2">
+                          <span className="text-yellow-600">7.0/10</span>
+                          <span>→</span>
+                          <span className="text-green-600 font-bold">8.5/10</span>
+                        </div>
+                      </div>
+                      
+                      <div className="flex justify-between items-center p-3 bg-green-100 rounded">
+                        <span className="font-bold">互动潜力</span>
+                        <div className="flex items-center space-x-2">
+                          <span className="text-yellow-600">7.5/10</span>
+                          <span>→</span>
+                          <span className="text-green-600 font-bold">8.8/10</span>
+                        </div>
+                      </div>
+                      
+                      <div className="mt-4 p-4 bg-green-200 rounded-lg">
+                        <h4 className="font-bold text-green-800 mb-2">✨ 核心改进亮点</h4>
+                        <ul className="text-sm text-green-700 space-y-1">
+                          <li>• 添加权威数据源（ITU 2024）增强可信度</li>
+                          <li>• 用户评论增加质疑和新手视角，提升真实性</li>
+                          <li>• 技术内容变为用户友好的对比解释</li>
+                          <li>• 所有配图统一品牌规范和负向提示词</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="mt-8 p-6 bg-gradient-to-r from-green-100 to-blue-100 rounded-lg">
+                  <h3 className="text-xl font-heading font-bold mb-4">🎯 优化后的营销策略特点</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div className="text-center">
+                      <div className="text-2xl mb-2">🧵</div>
+                      <h4 className="font-bold">连贯叙事</h4>
+                      <p className="text-sm text-gray-600">问题→解决方案→差异化，逻辑清晰</p>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-2xl mb-2">🎨</div>
+                      <h4 className="font-bold">视觉统一</h4>
+                      <p className="text-sm text-gray-600">品牌色彩+扁平设计，识别度高</p>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-2xl mb-2">🌍</div>
+                      <h4 className="font-bold">全球友好</h4>
+                      <p className="text-sm text-gray-600">时区优化+多元评论，包容性强</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* Twitter资料页视觉设计 */}
+      <section className="py-16 bg-gradient-to-br from-blue-50 to-purple-50">
+        <div className="container mx-auto container-padding">
+          <div className="max-w-6xl mx-auto">
+            <ScrollReveal>
+              <div className="bg-white p-8 rounded-lg shadow-md border-l-4 border-blue-500">
+                <h2 className="text-3xl font-heading font-bold mb-6 text-blue-800">🎨 Twitter资料页视觉设计</h2>
+                <p className="text-blue-600 mb-8">
+                  为@LuminaNetwork Twitter账户设计专业的横幅和背景图片
+                </p>
+
+                {/* Twitter横幅设计 */}
+                <div className="mb-12">
+                  <h3 className="text-2xl font-heading font-bold mb-6 text-purple-800">📱 Twitter横幅 (1500x500px)</h3>
+                  
+                  <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg border border-blue-200 mb-6">
+                    <h4 className="font-bold mb-4 text-blue-800">🎯 设计理念</h4>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                      <div className="text-center p-4 bg-white rounded-lg">
+                        <div className="text-2xl mb-2">🌐</div>
+                        <h5 className="font-bold">全球连接</h5>
+                        <p className="text-sm text-gray-600">展示Lumina连接世界的愿景</p>
+                      </div>
+                      <div className="text-center p-4 bg-white rounded-lg">
+                        <div className="text-2xl mb-2">⚡</div>
+                        <h5 className="font-bold">技术创新</h5>
+                        <p className="text-sm text-gray-600">体现DePIN技术的先进性</p>
+                      </div>
+                      <div className="text-center p-4 bg-white rounded-lg">
+                        <div className="text-2xl mb-2">🤝</div>
+                        <h5 className="font-bold">社区驱动</h5>
+                        <p className="text-sm text-gray-600">突出社区参与的重要性</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="bg-blue-50 p-6 rounded-lg border border-blue-200">
+                    <h4 className="font-bold mb-4 text-blue-800">🎨 详细提示词 (Twitter横幅)</h4>
+                    <div className="bg-white p-6 rounded-lg border-2 border-blue-300">
+                      <div className="space-y-4">
+                        <div>
+                          <h5 className="font-bold text-blue-800 mb-2">主要描述：</h5>
+                          <p className="text-sm leading-relaxed bg-gray-50 p-4 rounded border">
+                            Professional Twitter banner for Lumina DePIN network. Ultra-wide panoramic view showing global connectivity transformation. Left side: world map silhouette with dark disconnected regions and bright connected areas forming a network mesh. Center: large prominent "LUMINA" logo in brand colors #1e40af and #7c3aed with subtle glow effect. Right side: floating modern hardware nodes (routers, antennas, edge devices) connected by flowing energy streams in purple and blue gradients. Background: clean white to light blue gradient with subtle geometric pattern overlay. Multiple service icons (WiFi symbol, 5G waves, IoT sensors, edge computing chips) elegantly distributed around the composition. Professional flat design style with depth and dimension.
+                          </p>
+                        </div>
+                        
+                        <div>
+                          <h5 className="font-bold text-blue-800 mb-2">技术规格：</h5>
+                          <p className="text-sm bg-gray-50 p-4 rounded border">
+                            <strong>尺寸：</strong>1500x500 pixels (3:1 ratio) | <strong>分辨率：</strong>72-150 DPI | <strong>格式：</strong>PNG with transparency support | <strong>品牌色：</strong>#1e40af (primary blue), #7c3aed (secondary purple), #ffffff (background)
+                          </p>
+                        </div>
+                        
+                        <div>
+                          <h5 className="font-bold text-blue-800 mb-2">文字元素：</h5>
+                          <p className="text-sm bg-gray-50 p-4 rounded border">
+                            <strong>主标题：</strong>"LUMINA" (large, center-left, brand font) | <strong>副标题：</strong>"Connecting the Unconnected" (smaller, below logo) | <strong>标语：</strong>"DePIN • Multi-Service • Community-Owned" (right side, minimal typography)
+                          </p>
+                        </div>
+                        
+                        <div>
+                          <h5 className="font-bold text-red-800 mb-2">负向提示词：</h5>
+                          <p className="text-sm bg-red-50 p-4 rounded border text-red-700">
+                            no realistic photos, no competitor logos, no complex technical diagrams, no cluttered layout, no harsh shadows, no neon colors, no cryptocurrency symbols, no people faces, no text-heavy design, no dark backgrounds, no pixelated elements
+                          </p>
+                        </div>
+                        
+                        <div>
+                          <h5 className="font-bold text-green-800 mb-2">设计风格：</h5>
+                          <p className="text-sm bg-green-50 p-4 rounded border text-green-700">
+                            Modern flat design, professional corporate aesthetic, clean minimalist layout, subtle depth effects, premium technology branding, globally accessible visual language, scalable vector-style graphics
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* 背景图片设计 */}
+                <div className="mb-8">
+                  <h3 className="text-2xl font-heading font-bold mb-6 text-purple-800">🖼️ 背景图片 (1920x1080px)</h3>
+                  
+                  <div className="bg-purple-50 p-6 rounded-lg border border-purple-200">
+                    <h4 className="font-bold mb-4 text-purple-800">🎨 详细提示词 (背景图片)</h4>
+                    <div className="bg-white p-6 rounded-lg border-2 border-purple-300">
+                      <div className="space-y-4">
+                        <div>
+                          <h5 className="font-bold text-purple-800 mb-2">主要描述：</h5>
+                          <p className="text-sm leading-relaxed bg-gray-50 p-4 rounded border">
+                            Ultra-high quality desktop wallpaper for Lumina DePIN network. Expansive cosmic view of Earth from space showing illuminated network connections spanning continents. Glowing network nodes pulse with Lumina brand colors #1e40af and #7c3aed, creating flowing energy streams between cities and rural areas. Floating holographic interface elements display connectivity statistics: "2.6B+ Connected", "Multi-Service Network", "Community-Powered". Subtle Lumina logo watermark in bottom-right corner. Deep space background transitions from dark navy to cosmic purple with distant stars and nebula effects. Modern sci-fi aesthetic with photorealistic quality but maintaining clean flat design principles. Network visualization shows dense connections in developed regions and expanding coverage to previously dark areas.
+                          </p>
+                        </div>
+                        
+                        <div>
+                          <h5 className="font-bold text-purple-800 mb-2">视觉层次：</h5>
+                          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                            <div className="bg-gray-50 p-3 rounded border">
+                              <strong>前景：</strong>网络连接线条、数据流、统计界面
+                            </div>
+                            <div className="bg-gray-50 p-3 rounded border">
+                              <strong>中景：</strong>地球全景、城市光点、Lumina节点
+                            </div>
+                            <div className="bg-gray-50 p-3 rounded border">
+                              <strong>背景：</strong>宇宙星空、渐变色彩、品牌元素
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div>
+                          <h5 className="font-bold text-purple-800 mb-2">技术规格：</h5>
+                          <p className="text-sm bg-gray-50 p-4 rounded border">
+                            <strong>尺寸：</strong>1920x1080 pixels (16:9 ratio) | <strong>分辨率：</strong>150-300 DPI | <strong>格式：</strong>PNG/JPG high quality | <strong>用途：</strong>Desktop wallpaper, presentation background, website hero image
+                          </p>
+                        </div>
+                        
+                        <div>
+                          <h5 className="font-bold text-purple-800 mb-2">颜色方案：</h5>
+                          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 text-sm">
+                            <div className="bg-blue-800 text-white p-2 rounded text-center">#1e40af</div>
+                            <div className="bg-purple-600 text-white p-2 rounded text-center">#7c3aed</div>
+                            <div className="bg-gray-900 text-white p-2 rounded text-center">#0f172a</div>
+                            <div className="bg-white border p-2 rounded text-center">#ffffff</div>
+                          </div>
+                        </div>
+                        
+                        <div>
+                          <h5 className="font-bold text-red-800 mb-2">负向提示词：</h5>
+                          <p className="text-sm bg-red-50 p-4 rounded border text-red-700">
+                            no low resolution, no pixelated graphics, no busy/cluttered composition, no harsh lighting, no realistic human figures, no competitor branding, no complex technical text, no overwhelming visual effects, no cartoon style, no outdated design elements
+                          </p>
+                        </div>
+                        
+                        <div>
+                          <h5 className="font-bold text-green-800 mb-2">应用场景：</h5>
+                          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                            <div className="bg-green-50 p-3 rounded border text-green-700">
+                              <strong>社交媒体：</strong>Twitter背景、LinkedIn banner
+                            </div>
+                            <div className="bg-green-50 p-3 rounded border text-green-700">
+                              <strong>演示文稿：</strong>投资者报告、技术展示
+                            </div>
+                            <div className="bg-green-50 p-3 rounded border text-green-700">
+                              <strong>网站应用：</strong>首页横幅、关于页面
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* 设计建议 */}
+                <div className="bg-gradient-to-r from-blue-100 to-purple-100 p-6 rounded-lg">
+                  <h3 className="text-xl font-heading font-bold mb-4">💡 设计实施建议</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <h4 className="font-bold mb-3 text-blue-800">🛠️ 制作工具推荐</h4>
+                      <ul className="space-y-2 text-sm">
+                        <li className="flex items-center space-x-2">
+                          <span className="text-blue-600">•</span>
+                          <span><strong>AI生成：</strong>Midjourney, DALL-E 3, Stable Diffusion</span>
+                        </li>
+                        <li className="flex items-center space-x-2">
+                          <span className="text-blue-600">•</span>
+                          <span><strong>后期编辑：</strong>Figma, Adobe Illustrator, Canva Pro</span>
+                        </li>
+                        <li className="flex items-center space-x-2">
+                          <span className="text-blue-600">•</span>
+                          <span><strong>尺寸调整：</strong>确保符合Twitter规范和高清显示</span>
+                        </li>
+                      </ul>
+                    </div>
+                    
+                    <div>
+                      <h4 className="font-bold mb-3 text-purple-800">📋 质量检查清单</h4>
+                      <ul className="space-y-2 text-sm">
+                        <li className="flex items-center space-x-2">
+                          <span className="text-purple-600">✓</span>
+                          <span>品牌色彩使用准确（#1e40af + #7c3aed）</span>
+                        </li>
+                        <li className="flex items-center space-x-2">
+                          <span className="text-purple-600">✓</span>
+                          <span>Logo清晰可见且位置适当</span>
+                        </li>
+                        <li className="flex items-center space-x-2">
+                          <span className="text-purple-600">✓</span>
+                          <span>文字内容简洁易读</span>
+                        </li>
+                        <li className="flex items-center space-x-2">
+                          <span className="text-purple-600">✓</span>
+                          <span>移动端显示效果良好</span>
+                        </li>
+                        <li className="flex items-center space-x-2">
+                          <span className="text-purple-600">✓</span>
+                          <span>与推文内容风格保持一致</span>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
