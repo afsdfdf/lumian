@@ -130,11 +130,11 @@ export default function WhitepaperPage() {
             <ScrollReveal>
               <div className="mb-12">
                 <h2 className="text-3xl font-heading font-bold mb-6">1. Introduction</h2>
-                <div className="prose prose-lg max-w-none">
+              <div className="prose prose-lg max-w-none">
                   <h3 className="text-xl font-heading font-bold mb-4">Project Overview</h3>
                   <p className="text-text-medium mb-6">
-                    Lumina aims to address global internet connectivity challenges, particularly in emerging markets, through a Decentralized Physical Infrastructure Network (DePIN) model. We are committed to building a community-driven, scalable, and cost-effective decentralized internet infrastructure that provides users with high-speed, reliable, and affordable internet access.
-                  </p>
+                                      Lumina aims to address global internet connectivity challenges, particularly in emerging markets, through a Decentralized Physical Infrastructure Network (DePIN) model. We are committed to building a community-driven, scalable, and cost-effective decentralized internet infrastructure that provides users with high-speed, reliable, and affordable internet access.
+                </p>
                   
                   <h3 className="text-xl font-heading font-bold mb-4">Vision & Mission</h3>
                   <div className="bg-secondary p-6 rounded-lg mb-6">
@@ -328,7 +328,7 @@ export default function WhitepaperPage() {
                       <div className="p-4 border border-border rounded-lg">
                         <h4 className="font-bold text-primary mb-2">Governance Rights</h4>
                         <p className="text-sm text-text-medium">Participate in protocol decisions and treasury management.</p>
-                      </div>
+                    </div>
                     </div>
                   </div>
                 </div>
