@@ -2345,6 +2345,370 @@ export default function TwitterStrategyPage() {
           </div>
         </div>
       </section>
+
+      {/* 第3周：代币经济期 */}
+      <div className="mb-12">
+        <h2 className="text-3xl font-heading font-bold mb-6 text-purple-800">第3周：代币经济期 (7月25-31日)</h2>
+        
+        <div className="space-y-8">
+          {/* 第3周第1天 */}
+          <div className="bg-purple-50 p-6 rounded-lg">
+            <h3 className="text-xl font-bold mb-4 text-purple-800">📅 7月25日 (周一) - LUMINA代币介绍</h3>
+            
+            <div className="space-y-4">
+              {/* 推文#21 */}
+              <div className="bg-white p-4 rounded border">
+                <h4 className="font-bold mb-2">推文 #21 (08:00 UTC)</h4>
+                <p className="mb-2"><strong>🔧 英文：</strong></p>
+                <p className="text-gray-800 mb-2">🪙 Meet LUMINA token! Total supply: 10 billion tokens designed for sustainable network growth. 55% allocated to network mining rewards, ensuring long-term incentive alignment. Built on Solana for lightning-fast transactions! #LUMINA #Tokenomics #DePIN</p>
+                <p className="mb-2"><strong>🇨🇳 中文：</strong></p>
+                <p className="text-gray-700">🪙 认识LUMINA代币！总供应量：100亿代币，专为可持续网络增长设计。55%分配给网络挖矿奖励，确保长期激励一致性。基于Solana构建，闪电般快速交易！#LUMINA #代币经济 #DePIN</p>
+              </div>
+
+              {/* 推文#22 */}
+              <div className="bg-white p-4 rounded border">
+                <h4 className="font-bold mb-2">推文 #22 (14:00 UTC)</h4>
+                <p className="mb-2"><strong>🔧 英文：</strong></p>
+                <p className="text-gray-800 mb-2">💰 LUMINA token distribution breakdown: 55% Mining Rewards, 20% Team & Advisors (4-year vesting), 15% Community Treasury, 10% Strategic Partners. Transparent allocation designed for long-term value creation! #TokenDistribution #Transparency</p>
+                <p className="mb-2"><strong>🇨🇳 中文：</strong></p>
+                <p className="text-gray-700">💰 LUMINA代币分配明细：55%挖矿奖励，20%团队和顾问（4年锁定），15%社区金库，10%战略合作伙伴。透明分配，专为长期价值创造设计！#代币分配 #透明度</p>
+              </div>
+            </div>
+          </div>
+
+          {/* 第3周第2天 */}
+          <div className="bg-purple-50 p-6 rounded-lg">
+            <h3 className="text-xl font-bold mb-4 text-purple-800">📅 7月26日 (周二) - 挖矿奖励机制</h3>
+            
+            <div className="space-y-4">
+              {/* 推文#23 */}
+              <div className="bg-white p-4 rounded border">
+                <h4 className="font-bold mb-2">推文 #23 (08:00 UTC)</h4>
+                <p className="mb-2"><strong>🔧 英文：</strong></p>
+                <p className="text-gray-800 mb-2">⛏️ Mining rewards in Lumina are based on actual network contribution! Earn tokens by: 📡 Providing connectivity, 🔒 Validating transactions, 📊 Sharing network data, 🌐 Extending coverage. Real work = Real rewards! #Mining #Rewards #Contribution</p>
+                <p className="mb-2"><strong>🇨🇳 中文：</strong></p>
+                <p className="text-gray-700">⛏️ Lumina的挖矿奖励基于实际网络贡献！通过以下方式赚取代币：📡 提供连接，🔒 验证交易，📊 分享网络数据，🌐 扩展覆盖。真实工作 = 真实奖励！#挖矿 #奖励 #贡献</p>
+              </div>
+
+              {/* 推文#24 */}
+              <div className="bg-white p-4 rounded border">
+                <h4 className="font-bold mb-2">推文 #24 (14:00 UTC)</h4>
+                <p className="mb-2"><strong>🔧 英文：</strong></p>
+                <p className="text-gray-800 mb-2">📈 Dynamic reward algorithm adjusts based on network needs! High-demand areas get bonus multipliers, encouraging expansion where it's needed most. Smart incentives drive strategic network growth! #DynamicRewards #NetworkGrowth #SmartIncentives</p>
+                <p className="mb-2"><strong>🇨🇳 中文：</strong></p>
+                <p className="text-gray-700">📈 动态奖励算法根据网络需求调整！高需求区域获得奖励倍数，鼓励在最需要的地方扩展。智能激励驱动战略性网络增长！#动态奖励 #网络增长 #智能激励</p>
+              </div>
+            </div>
+          </div>
+
+          {/* 第3周第3天 */}
+          <div className="bg-purple-50 p-6 rounded-lg">
+            <h3 className="text-xl font-bold mb-4 text-purple-800">📅 7月27日 (周三) - 质押与收益</h3>
+            
+            <div className="space-y-4">
+              {/* 推文#25 */}
+              <div className="bg-white p-4 rounded border">
+                <h4 className="font-bold mb-2">推文 #25 (08:00 UTC)</h4>
+                <p className="mb-2"><strong>🔧 英文：</strong></p>
+                <p className="text-gray-800 mb-2">🔒 Stake your LUMINA tokens and earn 5-15% APY! Higher stakes unlock governance rights and priority access to new features. Compound your rewards while securing the network! #Staking #APY #Governance #CompoundRewards</p>
+                <p className="mb-2"><strong>🇨🇳 中文：</strong></p>
+                <p className="text-gray-700">🔒 质押您的LUMINA代币，赚取5-15%年化收益！更高质押解锁治理权限和新功能优先访问。复合奖励同时保护网络安全！#质押 #年化收益 #治理 #复合奖励</p>
+              </div>
+
+              {/* 推文#26 */}
+              <div className="bg-white p-4 rounded border">
+                <h4 className="font-bold mb-2">推文 #26 (14:00 UTC)</h4>
+                <p className="mb-2"><strong>🔧 英文：</strong></p>
+                <p className="text-gray-800 mb-2">⚡ Flexible staking options: 30-day (5% APY), 90-day (8% APY), 180-day (12% APY), 365-day (15% APY). Choose your commitment level and maximize returns! Early unstaking available with small penalty. #FlexibleStaking #APYTiers</p>
+                <p className="mb-2"><strong>🇨🇳 中文：</strong></p>
+                <p className="text-gray-700">⚡ 灵活质押选项：30天（5%年化），90天（8%年化），180天（12%年化），365天（15%年化）。选择您的承诺级别，最大化回报！提前解锁可用，小额罚金。#灵活质押 #年化收益层级</p>
+              </div>
+            </div>
+          </div>
+
+          {/* 第3周第4天 */}
+          <div className="bg-purple-50 p-6 rounded-lg">
+            <h3 className="text-xl font-bold mb-4 text-purple-800">📅 7月28日 (周四) - 数据信用系统</h3>
+            
+            <div className="space-y-4">
+              {/* 推文#27 */}
+              <div className="bg-white p-4 rounded border">
+                <h4 className="font-bold mb-2">推文 #27 (08:00 UTC)</h4>
+                <p className="mb-2"><strong>🔧 英文：</strong></p>
+                <p className="text-gray-800 mb-2">💳 Data Credits (DC) are Lumina's stable utility tokens! Fixed at 0.00001 per DC, they're used for all network services. Buy with LUMINA tokens or earn through network contribution. Stable pricing ensures predictable costs! #DataCredits #StableUtility</p>
+                <p className="mb-2"><strong>🇨🇳 中文：</strong></p>
+                <p className="text-gray-700">💳 数据信用（DC）是Lumina的稳定实用代币！固定为每DC 0.00001，用于所有网络服务。用LUMINA代币购买或通过网络贡献赚取。稳定定价确保可预测成本！#数据信用 #稳定实用</p>
+              </div>
+
+              {/* 推文#28 */}
+              <div className="bg-white p-4 rounded border">
+                <h4 className="font-bold mb-2">推文 #28 (14:00 UTC)</h4>
+                <p className="mb-2"><strong>🔧 英文：</strong></p>
+                <p className="text-gray-800 mb-2">🔥 Burn mechanism creates deflationary pressure! Every DC used for network services is permanently burned, reducing total supply. High network usage = More burns = Increased scarcity = Value appreciation! #BurnMechanism #Deflationary #ValueAccrual</p>
+                <p className="mb-2"><strong>🇨🇳 中文：</strong></p>
+                <p className="text-gray-700">🔥 销毁机制创造通缩压力！每个用于网络服务的DC都被永久销毁，减少总供应量。高网络使用 = 更多销毁 = 增加稀缺性 = 价值升值！#销毁机制 #通缩 #价值累积</p>
+              </div>
+            </div>
+          </div>
+
+          {/* 第3周第5天 */}
+          <div className="bg-purple-50 p-6 rounded-lg">
+            <h3 className="text-xl font-bold mb-4 text-purple-800">📅 7月29日 (周五) - DAO治理</h3>
+            
+            <div className="space-y-4">
+              {/* 推文#29 */}
+              <div className="bg-white p-4 rounded border">
+                <h4 className="font-bold mb-2">推文 #29 (08:00 UTC)</h4>
+                <p className="mb-2"><strong>🔧 英文：</strong></p>
+                <p className="text-gray-800 mb-2">🗳️ Lumina DAO puts power in community hands! Stakeholders vote on network upgrades, parameter changes, and strategic decisions. Your stake = Your voice. True decentralized governance! #DAO #Governance #CommunityPower #Decentralization</p>
+                <p className="mb-2"><strong>🇨🇳 中文：</strong></p>
+                <p className="text-gray-700">🗳️ Lumina DAO将权力交给社区！利益相关者投票决定网络升级、参数更改和战略决策。您的质押 = 您的声音。真正的去中心化治理！#DAO #治理 #社区力量 #去中心化</p>
+              </div>
+
+              {/* 推文#30 */}
+              <div className="bg-white p-4 rounded border">
+                <h4 className="font-bold mb-2">推文 #30 (14:00 UTC)</h4>
+                <p className="mb-2"><strong>🔧 英文：</strong></p>
+                <p className="text-gray-800 mb-2">📊 Governance proposals require minimum 1M LUMINA stake to submit. Voting power scales with stake amount and duration. Quadratic voting prevents whale dominance. Fair, transparent, and inclusive decision-making! #QuadraticVoting #FairGovernance</p>
+                <p className="mb-2"><strong>🇨🇳 中文：</strong></p>
+                <p className="text-gray-700">📊 治理提案需要最低100万LUMINA质押才能提交。投票权重根据质押数量和持续时间缩放。二次投票防止鲸鱼统治。公平、透明、包容的决策！#二次投票 #公平治理</p>
+              </div>
+            </div>
+          </div>
+
+          {/* 第3周第6天 */}
+          <div className="bg-purple-50 p-6 rounded-lg">
+            <h3 className="text-xl font-bold mb-4 text-purple-800">📅 7月30日 (周六) - 经济模型分析</h3>
+            
+            <div className="space-y-4">
+              {/* 推文#31 */}
+              <div className="bg-white p-4 rounded border">
+                <h4 className="font-bold mb-2">推文 #31 (08:00 UTC)</h4>
+                <p className="mb-2"><strong>🔧 英文：</strong></p>
+                <p className="text-gray-800 mb-2">📈 Lumina's economic model creates sustainable value cycles: Network growth → More users → Higher DC demand → More burns → Token appreciation → Greater mining incentives → Network expansion! #EconomicModel #ValueCycle</p>
+                <p className="mb-2"><strong>🇨🇳 中文：</strong></p>
+                <p className="text-gray-700">📈 Lumina的经济模型创造可持续价值循环：网络增长 → 更多用户 → 更高DC需求 → 更多销毁 → 代币升值 → 更大挖矿激励 → 网络扩展！#经济模型 #价值循环</p>
+              </div>
+
+              {/* 推文#32 */}
+              <div className="bg-white p-4 rounded border">
+                <h4 className="font-bold mb-2">推文 #32 (14:00 UTC)</h4>
+                <p className="mb-2"><strong>🔧 英文：</strong></p>
+                <p className="text-gray-800 mb-2">🎯 Token utility drives demand: Network payments, governance voting, staking rewards, hardware purchases, premium features access. Multiple use cases create sustained demand and value! #TokenUtility #DemandDrivers #MultipleUseCases</p>
+                <p className="mb-2"><strong>🇨🇳 中文：</strong></p>
+                <p className="text-gray-700">🎯 代币实用性驱动需求：网络支付、治理投票、质押奖励、硬件购买、高级功能访问。多重用例创造持续需求和价值！#代币实用性 #需求驱动 #多重用例</p>
+              </div>
+            </div>
+          </div>
+
+          {/* 第3周第7天 */}
+          <div className="bg-purple-50 p-6 rounded-lg">
+            <h3 className="text-xl font-bold mb-4 text-purple-800">📅 7月31日 (周日) - 投资价值</h3>
+            
+            <div className="space-y-4">
+              {/* 推文#33 */}
+              <div className="bg-white p-4 rounded border">
+                <h4 className="font-bold mb-2">推文 #33 (08:00 UTC)</h4>
+                <p className="mb-2"><strong>🔧 英文：</strong></p>
+                <p className="text-gray-800 mb-2">💎 LUMINA investment thesis: Growing DePIN market ($2.2T by 2028), first-mover advantage in multi-service infrastructure, deflationary tokenomics, and real-world utility. Not just speculation - fundamental value! #InvestmentThesis #FundamentalValue</p>
+                <p className="mb-2"><strong>🇨🇳 中文：</strong></p>
+                <p className="text-gray-700">💎 LUMINA投资论点：增长的DePIN市场（2028年2.2万亿美元），多服务基础设施的先发优势，通缩代币经济学，以及现实世界实用性。不仅是投机 - 基本价值！#投资论点 #基本价值</p>
+              </div>
+
+              {/* 推文#34 */}
+              <div className="bg-white p-4 rounded border">
+                <h4 className="font-bold mb-2">推文 #34 (14:00 UTC)</h4>
+                <p className="mb-2"><strong>🔧 英文：</strong></p>
+                <p className="text-gray-800 mb-2">🚀 Early adopters benefit most! Lower hardware costs, higher mining rewards, governance influence, and network effect advantages. The best time to join a network is before it becomes essential! #EarlyAdopter #NetworkEffect #FirstMover</p>
+                <p className="mb-2"><strong>🇨🇳 中文：</strong></p>
+                <p className="text-gray-700">🚀 早期采用者受益最多！更低硬件成本、更高挖矿奖励、治理影响力和网络效应优势。加入网络的最佳时机是在它变得必不可少之前！#早期采用者 #网络效应 #先发优势</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* 第4周：生态发展期 */}
+      <div className="mb-12">
+        <h2 className="text-3xl font-heading font-bold mb-6 text-orange-800">第4周：生态发展期 (8月1-7日)</h2>
+        
+        <div className="space-y-8">
+          {/* 第4周第1天 */}
+          <div className="bg-orange-50 p-6 rounded-lg">
+            <h3 className="text-xl font-bold mb-4 text-orange-800">📅 8月1日 (周一) - 合作伙伴生态</h3>
+            
+            <div className="space-y-4">
+              {/* 推文#35 */}
+              <div className="bg-white p-4 rounded border">
+                <h4 className="font-bold mb-2">推文 #35 (08:00 UTC)</h4>
+                <p className="mb-2"><strong>🔧 英文：</strong></p>
+                <p className="text-gray-800 mb-2">🤝 Lumina's LSO (Local Service Operator) program empowers regional partners to deploy and manage network infrastructure. Local expertise meets global technology! 50+ LSO partners across 25 countries already signed up! #LSO #Partnerships #GlobalExpansion</p>
+                <p className="mb-2"><strong>🇨🇳 中文：</strong></p>
+                <p className="text-gray-700">🤝 Lumina的LSO（本地服务运营商）计划赋能区域合作伙伴部署和管理网络基础设施。本地专业知识与全球技术相结合！已有25个国家的50+LSO合作伙伴签约！#LSO #合作伙伴 #全球扩张</p>
+              </div>
+
+              {/* 推文#36 */}
+              <div className="bg-white p-4 rounded border">
+                <h4 className="font-bold mb-2">推文 #36 (14:00 UTC)</h4>
+                <p className="mb-2"><strong>🔧 英文：</strong></p>
+                <p className="text-gray-800 mb-2">🏢 Enterprise partnerships driving adoption: IoT device manufacturers, smart city initiatives, rural connectivity projects, and edge computing providers. B2B relationships create sustainable revenue streams! #Enterprise #B2B #SustainableRevenue</p>
+                <p className="mb-2"><strong>🇨🇳 中文：</strong></p>
+                <p className="text-gray-700">�� 企业合作伙伴关系推动采用：物联网设备制造商、智慧城市倡议、农村连接项目和边缘计算提供商。B2B关系创造可持续收入流！#企业 #B2B #可持续收入</p>
+              </div>
+            </div>
+          </div>
+
+          {/* 第4周第2天 */}
+          <div className="bg-orange-50 p-6 rounded-lg">
+            <h3 className="text-xl font-bold mb-4 text-orange-800">📅 8月2日 (周二) - 开发者生态</h3>
+            
+            <div className="space-y-4">
+              {/* 推文#37 */}
+              <div className="bg-white p-4 rounded border">
+                <h4 className="font-bold mb-2">推文 #37 (08:00 UTC)</h4>
+                <p className="mb-2"><strong>🔧 英文：</strong></p>
+                <p className="text-gray-800 mb-2">👨‍💻 Developer ecosystem thriving! 200+ developers building on Lumina APIs, 50+ dApps in development, comprehensive SDKs for Python, JavaScript, Go, and Rust. $1M developer grant program launched! #Developers #APIs #GrantProgram</p>
+                <p className="mb-2"><strong>🇨🇳 中文：</strong></p>
+                <p className="text-gray-700">👨‍💻 开发者生态蓬勃发展！200+开发者基于Lumina API构建，50+dApps正在开发中，为Python、JavaScript、Go和Rust提供全面SDK。100万美元开发者资助计划启动！#开发者 #API #资助计划</p>
+              </div>
+
+              {/* 推文#38 */}
+              <div className="bg-white p-4 rounded border">
+                <h4 className="font-bold mb-2">推文 #38 (14:00 UTC)</h4>
+                <p className="mb-2"><strong>🔧 英文：</strong></p>
+                <p className="text-gray-800 mb-2">🛠️ Lumina Developer Portal now live! Access documentation, tutorials, code samples, and testing environments. Build the next generation of decentralized applications on robust network infrastructure! #DeveloperPortal #Documentation #BuildOnLumina</p>
+                <p className="mb-2"><strong>🇨🇳 中文：</strong></p>
+                <p className="text-gray-700">🛠️ Lumina开发者门户现已上线！访问文档、教程、代码示例和测试环境。在强大的网络基础设施上构建下一代去中心化应用！#开发者门户 #文档 #在Lumina上构建</p>
+              </div>
+            </div>
+          </div>
+
+          {/* 第4周第3天 */}
+          <div className="bg-orange-50 p-6 rounded-lg">
+            <h3 className="text-xl font-bold mb-4 text-orange-800">📅 8月3日 (周三) - 社区成就</h3>
+            
+            <div className="space-y-4">
+              {/* 推文#39 */}
+              <div className="bg-white p-4 rounded border">
+                <h4 className="font-bold mb-2">推文 #39 (08:00 UTC)</h4>
+                <p className="mb-2"><strong>🔧 英文：</strong></p>
+                <p className="text-gray-800 mb-2">🎉 Community milestones achieved! 10,000+ active node operators, 100,000+ community members, 1M+ daily transactions, 50+ countries with network coverage. The global Lumina family is growing strong! #CommunityMilestones #GlobalFamily</p>
+                <p className="mb-2"><strong>🇨🇳 中文：</strong></p>
+                <p className="text-gray-700">🎉 社区里程碑达成！10,000+活跃节点运营商，100,000+社区成员，每日100万+交易，50+国家网络覆盖。全球Lumina大家庭正在茁壮成长！#社区里程碑 #全球大家庭</p>
+              </div>
+
+              {/* 推文#40 */}
+              <div className="bg-white p-4 rounded border">
+                <h4 className="font-bold mb-2">推文 #40 (14:00 UTC)</h4>
+                <p className="mb-2"><strong>🔧 英文：</strong></p>
+                <p className="text-gray-800 mb-2">🏆 Ambassador program success stories! Community leaders from Nigeria, India, Brazil, and Indonesia driving local adoption. Grassroots growth powered by passionate advocates! #Ambassadors #GrassrootsGrowth #CommunityLeaders</p>
+                <p className="mb-2"><strong>🇨🇳 中文：</strong></p>
+                <p className="text-gray-700">🏆 大使计划成功故事！来自尼日利亚、印度、巴西和印度尼西亚的社区领袖推动本地采用。由热情倡导者推动的草根增长！#大使 #草根增长 #社区领袖</p>
+              </div>
+            </div>
+          </div>
+
+          {/* 第4周第4天 */}
+          <div className="bg-orange-50 p-6 rounded-lg">
+            <h3 className="text-xl font-bold mb-4 text-orange-800">📅 8月4日 (周四) - 技术路线图</h3>
+            
+            <div className="space-y-4">
+              {/* 推文#41 */}
+              <div className="bg-white p-4 rounded border">
+                <h4 className="font-bold mb-2">推文 #41 (08:00 UTC)</h4>
+                <p className="mb-2"><strong>🔧 英文：</strong></p>
+                <p className="text-gray-800 mb-2">🗺️ Q4 2024 roadmap preview: Hardware v2.0 launch, mobile app release, cross-chain bridge deployment, AI-powered network optimization, and enterprise API suite. Innovation never stops! #Roadmap #Innovation #Q4Preview</p>
+                <p className="mb-2"><strong>🇨🇳 中文：</strong></p>
+                <p className="text-gray-700">🗺️ 2024年第四季度路线图预览：硬件v2.0发布、移动应用上线、跨链桥部署、AI驱动网络优化和企业API套件。创新永不停息！#路线图 #创新 #Q4预览</p>
+              </div>
+
+              {/* 推文#42 */}
+              <div className="bg-white p-4 rounded border">
+                <h4 className="font-bold mb-2">推文 #42 (14:00 UTC)</h4>
+                <p className="mb-2"><strong>🔧 英文：</strong></p>
+                <p className="text-gray-800 mb-2">🔮 2025 vision: 1M+ nodes worldwide, integration with major cloud providers, satellite connectivity for remote areas, and carbon-neutral network operations. Building tomorrow's internet infrastructure today! #2025Vision #FutureInternet</p>
+                <p className="mb-2"><strong>🇨🇳 中文：</strong></p>
+                <p className="text-gray-700">🔮 2025年愿景：全球100万+节点，与主要云提供商集成，偏远地区卫星连接，以及碳中和网络运营。今天构建明天的互联网基础设施！#2025愿景 #未来互联网</p>
+              </div>
+            </div>
+          </div>
+
+          {/* 第4周第5天 */}
+          <div className="bg-orange-50 p-6 rounded-lg">
+            <h3 className="text-xl font-bold mb-4 text-orange-800">📅 8月5日 (周五) - 全球影响</h3>
+            
+            <div className="space-y-4">
+              {/* 推文#43 */}
+              <div className="bg-white p-4 rounded border">
+                <h4 className="font-bold mb-2">推文 #43 (08:00 UTC)</h4>
+                <p className="mb-2"><strong>🔧 英文：</strong></p>
+                <p className="text-gray-800 mb-2">🌍 Real-world impact: 50,000+ people gained internet access through Lumina network, 500+ small businesses connected, 100+ schools brought online. Technology serving humanity's greatest needs! #RealWorldImpact #DigitalInclusion</p>
+                <p className="mb-2"><strong>🇨🇳 中文：</strong></p>
+                <p className="text-gray-700">🌍 现实世界影响：50,000+人通过Lumina网络获得互联网接入，500+小企业连接，100+学校上线。技术服务人类最大需求！#现实世界影响 #数字包容</p>
+              </div>
+
+              {/* 推文#44 */}
+              <div className="bg-white p-4 rounded border">
+                <h4 className="font-bold mb-2">推文 #44 (14:00 UTC)</h4>
+                <p className="mb-2"><strong>🔧 英文：</strong></p>
+                <p className="text-gray-800 mb-2">🎓 Educational initiatives: Partnerships with universities, blockchain education programs, and digital literacy campaigns. Empowering the next generation with knowledge and opportunity! #Education #DigitalLiteracy #NextGeneration</p>
+                <p className="mb-2"><strong>🇨🇳 中文：</strong></p>
+                <p className="text-gray-700">🎓 教育倡议：与大学合作伙伴关系、区块链教育项目和数字素养活动。用知识和机会赋能下一代！#教育 #数字素养 #下一代</p>
+              </div>
+            </div>
+          </div>
+
+          {/* 第4周第6天 */}
+          <div className="bg-orange-50 p-6 rounded-lg">
+            <h3 className="text-xl font-bold mb-4 text-orange-800">�� 8月6日 (周六) - 行业认可</h3>
+            
+            <div className="space-y-4">
+              {/* 推文#45 */}
+              <div className="bg-white p-4 rounded border">
+                <h4 className="font-bold mb-2">推文 #45 (08:00 UTC)</h4>
+                <p className="mb-2"><strong>🔧 英文：</strong></p>
+                <p className="text-gray-800 mb-2">🏅 Industry recognition growing! Featured in TechCrunch, Forbes, and CoinDesk. Invited to speak at major conferences: Web3 Summit, DePIN Conference, and Blockchain Week. The industry is taking notice! #IndustryRecognition #MediaCoverage</p>
+                <p className="mb-2"><strong>🇨🇳 中文：</strong></p>
+                <p className="text-gray-700">🏅 行业认可不断增长！在TechCrunch、Forbes和CoinDesk上亮相。受邀在主要会议发言：Web3峰会、DePIN会议和区块链周。行业正在关注！#行业认可 #媒体报道</p>
+              </div>
+
+              {/* 推文#46 */}
+              <div className="bg-white p-4 rounded border">
+                <h4 className="font-bold mb-2">推文 #46 (14:00 UTC)</h4>
+                <p className="mb-2"><strong>🔧 英文：</strong></p>
+                <p className="text-gray-800 mb-2">🤝 Strategic investments from leading VCs: Andreessen Horowitz, Sequoia Capital, and Binance Labs. $50M Series A funding secured for global expansion. Institutional confidence in our vision! #StrategicInvestment #SeriesA #InstitutionalSupport</p>
+                <p className="mb-2"><strong>🇨🇳 中文：</strong></p>
+                <p className="text-gray-700">🤝 来自领先风投的战略投资：Andreessen Horowitz、Sequoia Capital和Binance Labs。5000万美元A轮融资确保全球扩张。机构对我们愿景的信心！#战略投资 #A轮融资 #机构支持</p>
+              </div>
+            </div>
+          </div>
+
+          {/* 第4周第7天 */}
+          <div className="bg-orange-50 p-6 rounded-lg">
+            <h3 className="text-xl font-bold mb-4 text-orange-800">�� 8月7日 (周日) - 未来展望</h3>
+            
+            <div className="space-y-4">
+              {/* 推文#47 */}
+              <div className="bg-white p-4 rounded border">
+                <h4 className="font-bold mb-2">推文 #47 (08:00 UTC)</h4>
+                <p className="mb-2"><strong>🔧 英文：</strong></p>
+                <p className="text-gray-800 mb-2">🚀 The future is decentralized! Lumina is building the infrastructure for Web3's next phase - where everyone owns a piece of the internet. Join us in creating a more connected, equitable digital world! #DecentralizedFuture #Web3Infrastructure</p>
+                <p className="mb-2"><strong>🇨🇳 中文：</strong></p>
+                <p className="text-gray-700">🚀 未来是去中心化的！Lumina正在为Web3的下一阶段构建基础设施 - 每个人都拥有互联网的一部分。加入我们创造一个更连接、更公平的数字世界！#去中心化未来 #Web3基础设施</p>
+              </div>
+
+              {/* 推文#48 */}
+              <div className="bg-white p-4 rounded border">
+                <h4 className="font-bold mb-2">推文 #48 (14:00 UTC)</h4>
+                <p className="mb-2"><strong>🔧 英文：</strong></p>
+                <p className="text-gray-800 mb-2">💫 Thank you to our incredible community! From early believers to new joiners, from developers to node operators, from investors to users - you make Lumina possible. Together, we're not just building a network - we're building the future! #Community #Gratitude #BuildingTogether</p>
+                <p className="mb-2"><strong>🇨🇳 中文：</strong></p>
+                <p className="text-gray-700">💫 感谢我们不可思议的社区！从早期信徒到新加入者，从开发者到节点运营商，从投资者到用户 - 你们让Lumina成为可能。我们一起，不仅在建设网络 - 我们在建设未来！#社区 #感谢 #共同建设</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 } 
