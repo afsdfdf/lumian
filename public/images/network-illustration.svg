@@ -1,0 +1,51 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="#f8fafc"/>
+  
+    <!-- Central hub -->
+    <circle cx="200" cy="150" r="25" fill="url(#gradient2)" filter="url(#glow)"/>
+    <text x="200" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Hub</text>
+    
+    <!-- Satellite nodes -->
+    <circle cx="100" cy="80" r="15" fill="url(#gradient1)" opacity="0.8"/>
+    <circle cx="300" cy="80" r="15" fill="url(#gradient1)" opacity="0.8"/>
+    <circle cx="80" cy="220" r="15" fill="url(#gradient1)" opacity="0.8"/>
+    <circle cx="320" cy="220" r="15" fill="url(#gradient1)" opacity="0.8"/>
+    <circle cx="50" cy="150" r="12" fill="url(#gradient1)" opacity="0.6"/>
+    <circle cx="350" cy="150" r="12" fill="url(#gradient1)" opacity="0.6"/>
+    
+    <!-- Connections -->
+    <line x1="200" y1="150" x2="100" y2="80" stroke="#3b82f6" stroke-width="2" opacity="0.6"/>
+    <line x1="200" y1="150" x2="300" y2="80" stroke="#3b82f6" stroke-width="2" opacity="0.6"/>
+    <line x1="200" y1="150" x2="80" y2="220" stroke="#3b82f6" stroke-width="2" opacity="0.6"/>
+    <line x1="200" y1="150" x2="320" y2="220" stroke="#3b82f6" stroke-width="2" opacity="0.6"/>
+    <line x1="200" y1="150" x2="50" y2="150" stroke="#10b981" stroke-width="2" opacity="0.6"/>
+    <line x1="200" y1="150" x2="350" y2="150" stroke="#10b981" stroke-width="2" opacity="0.6"/>
+    
+    <!-- Data flow indicators -->
+    <circle cx="150" cy="115" r="3" fill="#60a5fa" opacity="0.8">
+      <animate attributeName="r" values="3;6;3" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="250" cy="115" r="3" fill="#34d399" opacity="0.8">
+      <animate attributeName="r" values="3;6;3" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+  
+</svg>

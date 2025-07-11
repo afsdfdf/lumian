@@ -1,0 +1,15 @@
+<!-- This is a placeholder for a professional team member photo -->
+<!-- In production, this would be a real JPG image file -->
+<!-- For now, we'll use a high-quality SVG as a placeholder -->
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4F46E5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="300" height="300" fill="url(#bg)"/>
+  <circle cx="150" cy="120" r="50" fill="#FFFFFF" opacity="0.9"/>
+  <ellipse cx="150" cy="240" rx="80" ry="40" fill="#FFFFFF" opacity="0.9"/>
+  <text x="150" y="280" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#FFFFFF">Ming Zhang - CEO</text>
+</svg> 

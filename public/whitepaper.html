@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AetherLink Whitepaper - Decentralized Internet Infrastructure</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700&display=swap');
+    
+    :root {
+      --primary: #3B82F6;
+      --secondary: #10B981;
+      --text-dark: #1F2937;
+      --text-medium: #4B5563;
+      --text-light: #9CA3AF;
+      --border: #E5E7EB;
+      --background: #FFFFFF;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text-dark);
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: var(--text-dark);
+    }
+    
+    h1 {
+      font-size: 32px;
+      margin-top: 40px;
+      text-align: center;
+    }
+    
+    h2 {
+      font-size: 24px;
+      margin-top: 32px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+    
+    h3 {
+      font-size: 20px;
+      margin-top: 24px;
+    }
+    
+    p {
+      margin-bottom: 16px;
+      color: var(--text-medium);
+    }
+    
+    ul, ol {
+      margin-bottom: 16px;
+      padding-left: 24px;
+      color: var(--text-medium);
+    }
+    
+    li {
+      margin-bottom: 8px;
+    }
+    
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid var(--primary);
+    }
+    
+    .logo {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 20px;
+      display: block;
+    }
+    
+    .subtitle {
+      color: var(--text-medium);
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    .date {
+      color: var(--text-light);
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+    
+    .abstract {
+      font-style: italic;
+      margin: 20px 0 40px;
+      padding: 20px;
+      background-color: #F9FAFB;
+      border-left: 4px solid var(--primary);
+    }
+    
+    .section {
+      margin-bottom: 32px;
+    }
+    
+    .footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 14px;
+      color: var(--text-light);
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 24px;
+    }
+    
+    th, td {
+      padding: 12px;
+      border: 1px solid var(--border);
+    }
+    
+    th {
+      background-color: #F9FAFB;
+      font-weight: 600;
+      text-align: left;
+    }
+    
+    .toc {
+      background-color: #F9FAFB;
+      padding: 20px;
+      margin-bottom: 40px;
+    }
+    
+    .toc h3 {
+      margin-top: 0;
+    }
+    
+    .toc ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    
+    .toc li {
+      margin-bottom: 8px;
+    }
+    
+    .toc a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    
+    .toc a:hover {
+      text-decoration: underline;
+    }
+    
+    @media print {
+      body {
+        padding: 0;
+      }
+      
+      @page {
+        margin: 2cm;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="/logo.png" alt="AetherLink Logo" class="logo" />
+    <h1>AetherLink Whitepaper</h1>
+    <p class="subtitle">Decentralized Internet Infrastructure</p>
+    <p class="date">Version 1.0 - July 2023</p>
+  </div>
+  
+  <div class="abstract">
+    <p>This whitepaper introduces AetherLink, a decentralized internet infrastructure project designed to provide global connectivity through blockchain technology and community-owned hardware. By incentivizing network participation through a token economy, AetherLink aims to create a more accessible, secure, and efficient internet for everyone, particularly focusing on bridging the digital divide in underserved regions worldwide.</p>
+  </div>
+  
+  <div class="toc">
+    <h3>Table of Contents</h3>
+    <ul>
+      <li><a href="#introduction">1. Introduction</a></li>
+      <li><a href="#problem">2. Problem Statement</a></li>
+      <li><a href="#solution">3. The AetherLink Solution</a></li>
+      <li><a href="#technology">4. Technology Architecture</a></li>
+      <li><a href="#token">5. Token Economics</a></li>
+      <li><a href="#use-cases">6. Use Cases and Applications</a></li>
+      <li><a href="#roadmap">7. Roadmap</a></li>
+      <li><a href="#team">8. Team and Advisors</a></li>
+      <li><a href="#conclusion">9. Conclusion</a></li>
+    </ul>
+  </div>
+  
+  <div id="introduction" class="section">
+    <h2>1. Introduction</h2>
+    <p>The internet has become an essential utility in modern society, yet billions of people worldwide still lack reliable access. Even in areas with connectivity, issues of censorship, privacy concerns, and high costs persist. Traditional internet infrastructure relies on centralized service providers, creating single points of failure and limiting innovation.</p>
+    
+    <h3>1.1 Project Overview</h3>
+    <p>AetherLink aims to address global internet connectivity challenges, particularly in emerging markets, through a Decentralized Physical Infrastructure Network (DePIN) model. We are committed to building a community-driven, scalable, and cost-effective decentralized internet infrastructure that provides users with high-speed, reliable, and affordable internet access. Through an innovative tokenomic model, we incentivize network participants worldwide to contribute resources while ensuring data consumers receive quality internet services.</p>
+    
+    <h3>1.2 Vision and Mission</h3>
+    <p><strong>Vision:</strong> To become the world's leading decentralized internet infrastructure, empowering digital inclusivity and driving global internet access equity and efficiency.</p>
+    <p><strong>Mission:</strong> To leverage blockchain technology and the DePIN model to build an open, transparent, community-maintained global internet network that provides seamless connectivity to underserved regions while creating sustainable value for all ecosystem participants.</p>
+    
+    <h3>1.3 The Promise of DePIN for Global Connectivity</h3>
+    <p>Decentralized Physical Infrastructure Networks (DePIN) represent one of the most promising applications of blockchain technology to real-world infrastructure challenges. The DePIN model offers several key advantages:</p>
+    <ul>
+      <li><strong>Lower Capital Requirements:</strong> By distributing infrastructure costs across many participants</li>
+      <li><strong>Community Ownership:</strong> Users become stakeholders in the network</li>
+      <li><strong>Rapid Deployment:</strong> Faster and more flexible infrastructure deployment</li>
+      <li><strong>Censorship Resistance:</strong> More resistant to censorship and single points of failure</li>
+      <li><strong>Economic Opportunities:</strong> New income sources for individuals and communities</li>
+    </ul>
+  </div>
+  
+  <div id="problem" class="section">
+    <h2>2. Problem Statement</h2>
+    <h3>2.1 Limited Global Access</h3>
+    <p>Approximately 2.9 billion people worldwide have never used the internet, primarily in rural and developing regions where traditional infrastructure deployment is economically unfeasible. This digital divide is particularly pronounced in developing regions, where infrastructure limitations, affordability issues, and lack of relevant content and digital skills create substantial barriers to connectivity.</p>
+    
+    <h3>2.2 Centralization Risks</h3>
+    <p>Current internet infrastructure is controlled by a small number of service providers and tech companies, creating vulnerabilities to censorship, surveillance, and service disruptions. This centralization also limits innovation and competition in the connectivity space.</p>
+    
+    <h3>2.3 High Costs</h3>
+    <p>Internet access remains prohibitively expensive in many regions, limiting adoption and creating digital divides along socioeconomic lines. According to the Alliance for Affordable Internet (A4AI), the cost of 1GB of mobile data exceeds 2% of average monthly income in many developing countries, making regular internet use unaffordable for millions of people.</p>
+    
+    <h3>2.4 Privacy Concerns</h3>
+    <p>Centralized networks enable mass surveillance and data collection, compromising user privacy and autonomy. Growing concerns about data privacy and internet censorship have increased demand for more resilient, user-controlled networks.</p>
+    
+    <h3>2.5 Market Opportunity</h3>
+    <p>The DePIN sector has emerged as one of the fastest-growing segments within the blockchain ecosystem. Several factors contribute to the expanding market opportunity:</p>
+    <ul>
+      <li>Growing demand for bandwidth with global internet traffic increasing exponentially</li>
+      <li>5G and IoT expansion creating new demands for dense, distributed network infrastructure</li>
+      <li>Infrastructure gaps due to underinvestment by traditional telecommunications companies</li>
+      <li>Increasing awareness of privacy and censorship concerns</li>
+      <li>Regulatory evolution encouraging alternative infrastructure models</li>
+    </ul>
+  </div>
+  
+  <div id="solution" class="section">
+    <h2>3. The AetherLink Solution</h2>
+    <p>AetherLink addresses these challenges through a multi-layered approach:</p>
+    
+    <h3>3.1 Decentralized Infrastructure</h3>
+    <p>AetherLink creates a network of independently operated nodes that collectively provide internet connectivity, eliminating single points of failure and censorship. By leveraging existing Local Service Operators (LSOs) and individual contributors, we can rapidly expand coverage without the massive capital expenditure typically required for network deployment.</p>
+    
+    <h3>3.2 Token Incentives</h3>
+    <p>Participants earn AetherLink tokens (AetherLink Token) by contributing resources to the network, creating economic incentives for infrastructure deployment in underserved areas. Our multi-functional mining approach allows hardware to simultaneously provide connectivity services and perform other valuable tasks, significantly improving the return on investment for participants.</p>
+    
+    <h3>3.3 Community Governance</h3>
+    <p>Network parameters and development priorities are determined through decentralized governance, ensuring the system evolves to meet community needs. The AetherLink Foundation will initially guide development, with a gradual transition to a fully community-driven Decentralized Autonomous Organization (DAO).</p>
+    
+    <h3>3.4 Privacy by Design</h3>
+    <p>The AetherLink protocol incorporates privacy-enhancing technologies, protecting user data and communications from surveillance. End-to-end encryption, anonymous routing options, and minimal data collection policies ensure user privacy is maintained.</p>
+    
+    <h3>3.5 Ecosystem Participants</h3>
+    <p>The AetherLink ecosystem includes multiple participant types with aligned incentives:</p>
+    <ul>
+      <li><strong>Connectivity Providers:</strong> Individuals, businesses, and Local Service Operators who deploy and maintain network infrastructure</li>
+      <li><strong>Location Owners:</strong> Those who provide physical space for device deployment</li>
+      <li><strong>Data Consumers:</strong> End users accessing the network for internet connectivity</li>
+      <li><strong>Hardware Manufacturers:</strong> Producers of AetherLink-compatible devices</li>
+      <li><strong>Developers:</strong> Those building applications and services on the AetherLink platform</li>
+      <li><strong>AetherLink Foundation and DAO:</strong> Responsible for governance and ecosystem development</li>
+    </ul>
+  </div>
+  
+  <div id="technology" class="section">
+    <h2>4. Technology Architecture</h2>
+    <h3>4.1 Blockchain Layer</h3>
+    <p>AetherLink's blockchain manages node registration, service verification, payment processing, and governance. It uses a proof-of-coverage consensus mechanism that validates network participation and service quality.</p>
+    
+    <p>Key features of the blockchain layer include:</p>
+    <ul>
+      <li><strong>Smart Contracts:</strong> Managing network participation, rewards distribution, and service agreements</li>
+      <li><strong>Proof of Coverage:</strong> Verifying that nodes are providing the coverage and services they claim</li>
+      <li><strong>Tokenization:</strong> Enabling economic incentives through the AetherLink Token</li>
+      <li><strong>Governance Mechanisms:</strong> Supporting community decision-making through on-chain voting</li>
+      <li><strong>Data Credit System:</strong> Stabilizing service pricing independent of token volatility</li>
+    </ul>
+    
+    <h3>4.2 Hardware Solutions</h3>
+    <p>AetherLink nodes are compact, energy-efficient devices that can be deployed in various environments. Each node contains networking hardware, storage, and processing capabilities designed for easy setup and maintenance.</p>
+    
+    <p>Our hardware approach emphasizes:</p>
+    <ul>
+      <li><strong>Multi-functional Mining:</strong> Devices can simultaneously provide connectivity and perform other valuable tasks</li>
+      <li><strong>Scalability:</strong> From small consumer devices to enterprise-grade infrastructure</li>
+      <li><strong>Energy Efficiency:</strong> Optimized for low power consumption with renewable energy options</li>
+      <li><strong>Ease of Deployment:</strong> Simple setup process requiring minimal technical expertise</li>
+      <li><strong>Security:</strong> Hardware-level security features protecting both the network and users</li>
+    </ul>
+    
+    <h3>4.3 Protocol Layer</h3>
+    <p>The AetherLink protocol enables secure, efficient communication between nodes and clients. It includes mechanisms for service discovery, routing optimization, and quality of service management.</p>
+    
+    <p>Protocol features include:</p>
+    <ul>
+      <li><strong>Mesh Networking:</strong> Self-organizing network topology that adapts to changing conditions</li>
+      <li><strong>Dynamic Resource Allocation:</strong> Intelligent distribution of bandwidth and computing resources</li>
+      <li><strong>Quality of Service:</strong> Prioritization mechanisms ensuring consistent performance</li>
+      <li><strong>Security:</strong> End-to-end encryption and secure routing protocols</li>
+      <li><strong>Interoperability:</strong> Compatibility with existing internet protocols and standards</li>
+    </ul>
+    
+    <h3>4.4 Key Technical Features</h3>
+    <ul>
+      <li><strong>Mesh Networking:</strong> Nodes automatically form resilient mesh networks, adapting to changing conditions and providing redundant connectivity paths.</li>
+      <li><strong>Proof of Coverage:</strong> Verifies that nodes are actually providing the coverage and services they claim through cryptographic challenges and network measurements.</li>
+      <li><strong>Dynamic Resource Allocation:</strong> Intelligently allocates bandwidth, storage, and computing resources based on demand, optimizing network efficiency and user experience.</li>
+      <li><strong>Multi-Protocol Support:</strong> Compatible with existing internet infrastructure and devices, ensuring seamless integration with the broader internet ecosystem.</li>
+      <li><strong>End-to-End Encryption:</strong> Protects user data and communications from surveillance and interception, preserving privacy and security.</li>
+      <li><strong>Smart Contracts:</strong> Automates service provisioning, payments, and dispute resolution, reducing friction and transaction costs.</li>
+      <li><strong>Decentralized Identity:</strong> Provides secure, privacy-preserving authentication without requiring centralized identity providers.</li>
+      <li><strong>Data Marketplace:</strong> Enables monetization of anonymized network data, creating additional value streams for participants.</li>
+    </ul>
+  </div>
+  
+  <div id="token" class="section">
+    <h2>5. Token Economics</h2>
+    <h3>5.1 Token Utility</h3>
+    <p>The AetherLink Token serves multiple functions within the ecosystem:</p>
+    <ul>
+      <li><strong>Network Rewards:</strong> Participants earn AetherLink Token for providing connectivity and other services</li>
+      <li><strong>Service Payments:</strong> Users can pay for network access using AetherLink Token</li>
+      <li><strong>Governance:</strong> Token holders can participate in protocol decisions through voting</li>
+      <li><strong>Staking:</strong> Securing the network and earning additional rewards</li>
+      <li><strong>Data Credit Conversion:</strong> AetherLink Token can be converted to Data Credits, which provide stable-priced network access</li>
+    </ul>
+    
+    <h3>5.2 Token Distribution</h3>
+    <table>
+      <tr>
+        <th>Allocation Category</th>
+        <th>Percentage</th>
+        <th>Amount of Tokens</th>
+        <th>Unlock % at TGE</th>
+        <th>Cliff Period (months)</th>
+        <th>Vesting Period (months)</th>
+        <th>% of Total Supply</th>
+      </tr>
+      <tr>
+        <td>Data Provider Incentives</td>
+        <td>35%</td>
+        <td>3,500,000,000</td>
+        <td>25%</td>
+        <td>0</td>
+        <td>24</td>
+        <td>8.75%</td>
+      </tr>
+      <tr>
+        <td>User Interaction Incentives</td>
+        <td>20%</td>
+        <td>2,000,000,000</td>
+        <td>10%</td>
+        <td>0</td>
+        <td>24</td>
+        <td>2.0%</td>
+      </tr>
+      <tr>
+        <td>DAO Treasury / Governance</td>
+        <td>20%</td>
+        <td>2,000,000,000</td>
+        <td>0%</td>
+        <td>6</td>
+        <td>48</td>
+        <td>0.0%</td>
+      </tr>
+      <tr>
+        <td>Core Dev Team</td>
+        <td>15%</td>
+        <td>1,500,000,000</td>
+        <td>0%</td>
+        <td>12</td>
+        <td>36</td>
+        <td>0.0%</td>
+      </tr>
+      <tr>
+        <td>Strategic & Ecosystem Partners</td>
+        <td>10%</td>
+        <td>1,000,000,000</td>
+        <td>15%</td>
+        <td>6</td>
+        <td>24</td>
+        <td>1.5%</td>
+      </tr>
+    </table>
+    
+    <h3>5.3 Tokenomics Model</h3>
+    <p>AetherLink implements a sustainable tokenomics model with the following characteristics:</p>
+    <ul>
+      <li><strong>Initial supply:</strong> 1,000,000,000 AetherLink Token</li>
+      <li><strong>Emission schedule:</strong> Decreasing rewards over time to incentivize early adoption</li>
+      <li><strong>Burning mechanism:</strong> A portion of network fees are burned, creating deflationary pressure</li>
+      <li><strong>Staking rewards:</strong> Token holders can stake AetherLink Token to earn a portion of network fees</li>
+    </ul>
+    
+    <h3>5.4 Data Credit System</h3>
+    <p>To address cryptocurrency price volatility, AetherLink implements a Data Credit system:</p>
+    <ul>
+      <li>Data Credits (DCs) have a fixed value in fiat currency (e.g., 1 DC = $0.00001 USD)</li>
+      <li>AetherLink Token can be converted to DCs through a burning mechanism</li>
+      <li>DCs are non-transferable and can only be used for network services</li>
+      <li>This system ensures stable service pricing regardless of AetherLink Token market fluctuations</li>
+      <li>As network usage increases, more AetherLink Token is burned, creating positive token value pressure</li>
+    </ul>
+  </div>
+  
+  <div id="use-cases" class="section">
+    <h2>6. Use Cases and Applications</h2>
+    
+    <h3>6.1 Bridging the Digital Divide in Rural Communities</h3>
+    <p>Rural areas worldwide often lack adequate internet infrastructure due to the high costs of traditional deployment models. AetherLink's decentralized approach dramatically reduces these costs while creating economic opportunities for local participants.</p>
+    
+    <p><strong>Implementation Approach:</strong></p>
+    <ul>
+      <li>Local entrepreneurs deploy AetherLink hotspots in strategic locations</li>
+      <li>Existing local service operators integrate with the AetherLink network</li>
+      <li>Community buildings serve as anchor points for the network</li>
+      <li>Educational programs help community members leverage internet access</li>
+    </ul>
+    
+    <p><strong>Expected Outcomes:</strong></p>
+    <ul>
+      <li>Increased internet penetration in previously underserved areas</li>
+      <li>New economic opportunities through digital inclusion</li>
+      <li>Improved access to educational resources, telehealth services, and e-government</li>
+      <li>Reduced urban migration as digital opportunities become available locally</li>
+    </ul>
+    
+    <h3>6.2 Affordable Urban Connectivity for Low-Income Areas</h3>
+    <p>Even in urban environments, internet access remains unaffordable for many low-income households. AetherLink's efficient resource utilization and community-based approach can significantly reduce connectivity costs.</p>
+    
+    <p><strong>Implementation Approach:</strong></p>
+    <ul>
+      <li>Deployment of hotspots in residential buildings with revenue sharing for owners</li>
+      <li>Partnerships with local businesses to host hotspots</li>
+      <li>Integration with existing community Wi-Fi initiatives</li>
+      <li>Targeted subsidies or special pricing for low-income users</li>
+    </ul>
+    
+    <h3>6.3 Disaster Recovery and Resilient Communications</h3>
+    <p>Natural disasters frequently damage centralized communications infrastructure. AetherLink's decentralized architecture provides greater resilience and faster recovery capabilities.</p>
+    
+    <p><strong>Implementation Approach:</strong></p>
+    <ul>
+      <li>Deployment of solar-powered or battery-backed hotspots in disaster-prone regions</li>
+      <li>Integration with emergency response systems</li>
+      <li>Specialized firmware for emergency operation modes</li>
+      <li>Training for local emergency responders</li>
+    </ul>
+    
+    <h3>6.4 Smart City Infrastructure Integration</h3>
+    <p>As cities implement smart city initiatives, they require ubiquitous connectivity for IoT devices, sensors, and public services. AetherLink provides a cost-effective, scalable solution.</p>
+    
+    <p><strong>Implementation Approach:</strong></p>
+    <ul>
+      <li>Integration of hotspots with street furniture (lighting, signage, bus shelters)</li>
+      <li>Specialized hotspots supporting both public internet access and IoT connectivity</li>
+      <li>Partnerships with municipal governments</li>
+      <li>Secure channels for municipal service data</li>
+    </ul>
+    
+    <h3>6.5 Temporary and Event-Based Connectivity</h3>
+    <p>Large events, construction projects, and temporary gatherings often require substantial connectivity that existing infrastructure cannot efficiently provide. AetherLink's flexible deployment model is ideal for these scenarios.</p>
+    
+    <p><strong>Implementation Approach:</strong></p>
+    <ul>
+      <li>Rapid deployment kits for temporary installation</li>
+      <li>Revenue-sharing models with event organizers</li>
+      <li>Specialized quality-of-service configurations for high-density usage</li>
+      <li>Integration with event management systems</li>
+    </ul>
+  </div>
+  
+  <div id="roadmap" class="section">
+    <h2>7. Roadmap</h2>
+    <h3>Phase 1: Foundation (Q1 2025 - Q2 2025)</h3>
+    <ul>
+      <li>Protocol development and testing</li>
+      <li>Hardware prototype development</li>
+      <li>Testnet launch</li>
+      <li>Initial partnerships</li>
+      <li>Community building and developer outreach</li>
+      <li>Regulatory framework development</li>
+    </ul>
+    
+    <h3>Phase 2: Launch (Q3 2025 - Q4 2025)</h3>
+    <ul>
+      <li>Mainnet launch</li>
+      <li>Token generation event</li>
+      <li>Hardware production and distribution</li>
+      <li>First deployment in target regions</li>
+      <li>Developer SDK release</li>
+      <li>Initial LSO partnerships</li>
+    </ul>
+    
+    <h3>Phase 3: Growth (2026)</h3>
+    <ul>
+      <li>Expansion to additional regions</li>
+      <li>Integration with existing internet service providers</li>
+      <li>Development of additional network services</li>
+      <li>Enhanced governance mechanisms</li>
+      <li>Data marketplace launch</li>
+      <li>Advanced multi-functional mining features</li>
+    </ul>
+    
+    <h3>Phase 4: Maturity (2027 and beyond)</h3>
+    <ul>
+      <li>Global network coverage</li>
+      <li>Full decentralization of governance</li>
+      <li>Advanced services layer (decentralized storage, computing, etc.)</li>
+      <li>Integration with other decentralized technologies</li>
+      <li>Industry standards development</li>
+      <li>Regulatory advocacy for decentralized infrastructure</li>
+    </ul>
+  </div>
+  
+  <div id="team" class="section">
+    <h2>8. Team and Advisors</h2>
+    <h3>Core Team</h3>
+    
+    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+      <img src="/images/team/robert-johnson.jpg" alt="Robert Johnson" style="width: 80px; height: 80px; border-radius: 50%; margin-right: 20px; object-fit: cover;" />
+      <div>
+        <p><strong>Robert Johnson - CEO & Co-founder</strong><br>
+        Former executive at Verizon Communications with 15+ years of experience in global connectivity solutions and telecommunications infrastructure deployment across emerging markets.</p>
+      </div>
+    </div>
+    
+    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+      <img src="/images/team/michael-chen.jpg" alt="Michael Chen" style="width: 80px; height: 80px; border-radius: 50%; margin-right: 20px; object-fit: cover;" />
+      <div>
+        <p><strong>Michael Chen - CTO & Co-founder</strong><br>
+        Blockchain architect and distributed systems expert with previous experience at leading tech companies including Google and Coinbase, specializing in DePIN protocols.</p>
+      </div>
+    </div>
+    
+    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+      <img src="/images/team/alexandra-thompson.jpg" alt="Alexandra Thompson" style="width: 80px; height: 80px; border-radius: 50%; margin-right: 20px; object-fit: cover;" />
+      <div>
+        <p><strong>Alexandra Thompson - Head of Research</strong><br>
+        PhD in Computer Networks from MIT with specialization in mesh networking and protocol design. Former researcher at Bell Labs with 20+ published papers on decentralized systems.</p>
+      </div>
+    </div>
+    
+    <div style="display: flex; align-items: center; margin-bottom: 20px;">
+      <img src="/images/team/david-martinez.jpg" alt="David Martinez" style="width: 80px; height: 80px; border-radius: 50%; margin-right: 20px; object-fit: cover;" />
+      <div>
+        <p><strong>David Martinez - Head of Operations</strong><br>
+        Experienced operations leader with background in hardware manufacturing and global supply chains. Former VP of Operations at Cisco Systems with expertise in network equipment deployment.</p>
+      </div>
+    </div>
+    
+    <h3>Advisors</h3>
+    <p>AetherLink is supported by advisors from the fields of telecommunications, blockchain technology, and international development, including:</p>
+    <ul>
+      <li><strong>Dr. Jennifer Williams</strong> - Former CTO of T-Mobile, telecommunications infrastructure expert</li>
+      <li><strong>Professor James Anderson</strong> - Stanford University, blockchain and tokenomics specialist</li>
+      <li><strong>Maria Rodriguez</strong> - Former regulatory counsel at FCC, policy and regulatory advisor</li>
+      <li><strong>Thomas Brown</strong> - Former World Bank digital development director, international development professional</li>
+      <li><strong>Dr. Sarah Kim</strong> - MIT Media Lab, community building and governance expert</li>
+    </ul>
+  </div>
+  
+  <div id="conclusion" class="section">
+    <h2>9. Conclusion</h2>
+    <p>AetherLink represents a fundamental shift in how internet infrastructure is deployed, operated, and governed. By aligning economic incentives with social benefits, the project aims to create a more accessible, secure, and efficient internet for everyone.</p>
+    
+    <p>Our vision extends beyond simply providing internet access; we aim to fundamentally reshape how connectivity infrastructure is deployed, operated, and governed. Through the power of community ownership and decentralized decision-making, AetherLink can evolve to meet the changing needs of its users while maintaining its core values of accessibility, privacy, and fairness.</p>
+    
+    <p>The combination of blockchain technology, innovative hardware, and community governance creates a sustainable model for expanding connectivity globally while preserving the core values of privacy, neutrality, and accessibility that were central to the original vision of the internet.</p>
+    
+    <p>We invite developers, network operators, investors, and users to join us in building this decentralized internet infrastructure for the future. Together, we can create a more connected world where access to information and digital opportunities is not limited by geography, economics, or centralized control.</p>
+    
+    <p>The future of the internet is decentralized, community-driven, and accessible to all. With AetherLink, that future begins today.</p>
+  </div>
+  
+  <div class="footer">
+    <p>© 2023 AetherLink. All rights reserved.</p>
+    <p>For more information, visit <a href="https://aetherlink.io">aetherlink.io</a></p>
+    <p>Contact: info@aetherlink.io</p>
+    <p>
+      <a href="https://twitter.com/AetherLink_io">Twitter</a> | 
+      <a href="https://discord.gg/aetherlink">Discord</a> | 
+      <a href="https://t.me/AetherLink_Official">Telegram</a>
+    </p>
+  </div>
+</body>
+</html> 
